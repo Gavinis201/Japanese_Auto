@@ -1,0 +1,182 @@
+<!-- Programmer: Gavin Web Debelopment  -->
+ <!-- 11/21/24 -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Japanese Auto - Reliable Auto Repair</title>
+     <link rel="stylesheet" href="./css/styles.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+ </head>
+ <body>
+ 
+     <!-- Header with contact and location info  -->
+      <div class="top">
+         <div class="innerleft">
+             <p>235 W 300 S, Provo, UT 84601</p>
+         </div>
+         <div class="innerright">Mon-Fri: 8am-6pm, Sat: 8am-2pm</div>
+     </div>
+ 
+     <header>
+         <div class="nav-container">
+             <div >
+                 <img src="./assets/auto.jpg" height="100px" style="margin-left: 30px;" ><a  href="./index.html" style="color: white">Japanese Auto Repair Logo</a>
+             </div>
+             <nav class="nav-list">
+                 <ul >
+                     <li class="nav-gold"><a href="./index.html">Home</a></li>
+                     <li class="nav-gold"><a href="./services.html">Services </a></li>
+                     <li class="nav-gold"><a href="./contact.html">Contact</a></li>
+                     <li class="nav-gold"><a href="./story.html">Our Story</a></li>
+                 </ul>
+             </nav>
+             <div class="location-info">
+                 
+                 <button class="appointment-button">📞 (801)-373-9696</button>
+                 &nbsp;&nbsp;
+                     <a href="https://www.facebook.com" target="_blank" class="social-icon-header">
+                         <i class="fab fa-facebook-f"></i>
+                     </a>
+                     <a href="https://www.instagram.com" target="_blank" class="social-icon-header">
+                         <i class="fab fa-instagram"></i>
+                     </a>
+                     <a href="https://www.tiktok.com" target="_blank" class="social-icon-header">
+                         <i class="fab fa-tiktok"></i>
+                     </a>
+             </div>
+         </div>
+         
+         
+     </header>
+     <div class="banner-wrapper">
+         <div class="banner-scroll">
+             <div class="banner-item">🚗 Brake Issues</div>
+             <div class="banner-item">🔧 Engine Problems</div>
+             <div class="banner-item">❄️ AC Repair</div>
+             <div class="banner-item">🔋 Battery Replacement</div>
+             <div class="banner-item">🛠️ Oil Change</div>
+             <!-- Repeated Items for Seamless Scroll -->
+             <div class="banner-item">🚗 Brake Issues</div>
+             <div class="banner-item">🔧 Engine Problems</div>
+             <div class="banner-item">❄️ AC Repair</div>
+             <div class="banner-item">🔋 Battery Replacement</div>
+             <div class="banner-item">🛠️ Oil Change</div>
+         </div>
+     </div>
+     <script>
+         const bannerContent = document.querySelector('.banner-scroll');
+ 
+         // Duplicate the content
+         const clone = bannerContent.cloneNode(true);
+         bannerContent.parentNode.appendChild(clone);
+ 
+     </script>
+     
+     <section class="hero" style="background-image: url('./assets/autoguy.jpg'); height: 300px;padding: 20px;" >
+        <div class="hero-content">
+            <h1>Services</h1><br>
+        </div>
+    </section>
+ 
+ <section class="services-section">
+     <h2>Expert Auto Repair Services in Provo, Utah</h2>
+     <br><br>
+     <div class="cards-container">
+         <!-- Card 1 -->
+         <div class="service-card">
+             <img src="./assets/auto.jpg" alt="Diagnostic Services">
+             <h3>Diagnostic Services</h3>
+             <p>With our expertise spanning two decades and the utilization of cutting-edge technology, we excel at vehicle diagnostics. Count on us to decipher those perplexing warning lights and provide precise assessments. Rest assured that our diagnostic services guarantee peace of mind for every driver, ensuring optimal performance for your vehicle.</p>
+         </div>
+         <!-- Card 2 -->
+         <div class="service-card">
+             <img src="./assets/auto.jpg" alt="Brake Repairs">
+             <h3>Brake Repairs</h3>
+             <p>We specialize in providing comprehensive brake repair services to quickly diagnose and address any brake issues you may have. From worn pads and damaged rotors to brake fluid problems, trust us to deliver expert automotive solutions that guarantee your brakes are always in top-notch condition.</p>
+         </div>
+         <!-- Card 3 -->
+         <div class="service-card">
+             <img src="./assets/auto.jpg" alt="Auto Tune-Ups">
+             <h3>Auto Tune-Ups</h3>
+             <p>Our Auto Tune-Up service is the ultimate solution for maintaining your vehicle's smooth and efficient operation. We meticulously inspect and fine-tune every aspect of your engine, guaranteeing peak performance, improved fuel efficiency, and reduced emissions. With our top-notch tune-ups, you'll notice a substantial enhancement in your car's reliability and overall driving experience.</p>
+         </div>
+         <!-- Card 4 -->
+         <div class="service-card">
+             <img src="./assets/auto.jpg" alt="On-Spot Renewal">
+             <h3>On Spot Renewal</h3>
+             <p>Our On-Spot Renewal service simplifies the frequently time-consuming task of renewing your vehicle's registration. You can bypass the lengthy queues and tedious paperwork when you choose us, as we efficiently manage everything in-house. Embrace the ease and efficiency of hassle-free registration renewal by opting for our services.</p>
+         </div>
+         <!-- Card 5 -->
+         <div class="service-card">
+             <img src="./assets/auto.jpg" alt="Oil Change & Maintenance">
+             <h3>Oil Change & Maintenance</h3>
+             <p>Our Oil Change Service ensures quick and efficient oil changes, utilizing top-grade oils that keep your engine running smoothly and extend its lifespan. Moreover, our comprehensive oil maintenance checks cover all vital components, guaranteeing that your car remains reliable and efficient.</p>
+         </div>
+         <!-- Card 6 -->
+         <div class="service-card">
+             <img src="./assets/auto.jpg" alt="AC Repair Service">
+             <h3>AC Repair Service</h3>
+             <p>Experience ultimate comfort and coolness on scorching days with our unparalleled AC repair services. Our highly skilled car mechanics specialize in delivering swift solutions to any AC issues, efficiently restoring your car's cooling system to peak performance.</p>
+         </div>
+     </div>
+ </section>
+ 
+     
+ 
+     <!-- Footer -->
+     <section class="info-section">
+         <div class="info-column margin"><br>
+           <h3 class="margin">Contact Details</h3>
+           <p><i class="fas fa-map-marker-alt"></i> 235 W 300 S, Provo, UT 84601</p>
+           <p><i class="fas fa-phone-alt"></i> (801)-373-9696</p>
+           <p><i class="fas fa-envelope"></i> support@JapaneseAuto.com</p>
+             <br>
+           <button class="appointment-button margin"> Book Appointment</button>
+         </div>
+         <div class="info-column margin">
+           <h3 class="margin">Working Hours</h3>
+           
+           <p>   Monday: 8:00 am - 5:30 pm</p>
+           <p>  Tuesday: 8:00 am - 5:30 pm</p>
+           <p>Wednesday: 8:00 am - 5:30 pm</p>
+           <p> Thursday: 8:00 am - 5:30 pm</p>
+           <p>   Friday: 8:00 am - 5:30 pm</p>
+           <p>Saturday: 8:00 am - 12:00 pm</p>
+           <p              >Sunday: Closed</p>
+         </div>
+         <div class="info-column ">
+             <h3 class="">Japanese Auto Repair</h3>
+             <p class="widthp " >
+             At Japanese Auto Repair Shop, we pride ourselves on delivering
+             reliable and top-quality service specializing in Japanese 
+             vehicles. With years of experience, we understand the 
+             intricacies of these cars and use the latest diagnostic 
+             tools and techniques to keep them running smoothly. 
+           </p>
+         </div>
+     </section>
+       
+     <footer>
+         <section class="social-media">
+             <a href="https://www.facebook.com" target="_blank" class="social-icon-header">
+                 <i class="fab fa-facebook-f"></i>
+             </a>
+             <a href="https://www.instagram.com" target="_blank" class="social-icon-header">
+                 <i class="fab fa-instagram"></i>
+             </a>
+             <a href="https://www.tiktok.com/" target="_blank" class="social-icon-header">
+                 <i class="fab fa-tiktok"></i>
+             </a>
+         </section> <br>
+         <p>Japanese Auto Repair &copy; 2024</p>
+     </footer>
+ 
+ </body>
+ </html>
+ 
+ </body>
+ </html>
+ 

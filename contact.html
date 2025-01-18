@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- EmailJS Script -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("7Q9nxUsxP0K1HkUvi");
+    })();
+  </script>
+
+  <!-- External JavaScript -->
+  <script src="index.js"></script>
+</head>
+<body >
+
+ 
+    <!-- Header with contact and location info  -->
+    <div class="top">
+      <div class="innerleft">
+          <p>235 W 300 S, Provo, UT 84601</p>
+      </div>
+      <div class="innerright">Mon-Fri: 8am-6pm, Sat: 8am-2pm</div>
+  </div>
+
+  <header>
+    <div class="nav-container">
+        <div >
+            <img src="./assets/auto.jpg" height="100px" style="margin-left: 30px;" ><a  href="./index.html" style="color: white">Japanese Auto Repair Logo</a>
+        </div>
+        <nav class="nav-list">
+            <ul >
+                <li class="nav-gold"><a href="./index.html">Home</a></li>
+                <li class="nav-gold"><a href="./services.html">Services </a></li>
+                <li class="nav-gold"><a href="./contact.html">Contact</a></li>
+                <li class="nav-gold"><a href="./story.html">Our Story</a></li>
+            </ul>
+        </nav>
+        <div class="location-info">
+            
+            <button class="appointment-button">📞 (801)-373-9696</button>
+            &nbsp;&nbsp;
+                <a href="https://www.facebook.com" target="_blank" class="social-icon-header">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon-header">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/" target="_blank" class="social-icon-header">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+        </div>
+    </div>
+    
+    
+</header>
+  <div class="banner-wrapper">
+      <div class="banner-scroll">
+          <div class="banner-item">🚗 Brake Issues</div>
+          <div class="banner-item">🔧 Engine Problems</div>
+          <div class="banner-item">❄️ AC Repair</div>
+          <div class="banner-item">🔋 Battery Replacement</div>
+          <div class="banner-item">🛠️ Oil Change</div>
+          <!-- Repeated Items for Seamless Scroll -->
+          <div class="banner-item">🚗 Brake Issues</div>
+          <div class="banner-item">🔧 Engine Problems</div>
+          <div class="banner-item">❄️ AC Repair</div>
+          <div class="banner-item">🔋 Battery Replacement</div>
+          <div class="banner-item">🛠️ Oil Change</div>
+      </div>
+  </div>
+  <script>
+      const bannerContent = document.querySelector('.banner-scroll');
+
+      // Duplicate the content
+      const clone = bannerContent.cloneNode(true);
+      bannerContent.parentNode.appendChild(clone);
+
+  </script>
+
+<section class="hero" style="background-image: url('./assets/autoguy.jpg'); height: 300px;padding: 20px;" >
+  <div class="hero-content">
+      <h1>Contact Us</h1><br>
+      <h3>Hablamos tu idioma</h3>
+  </div>
+</section>
+
+  
+<div class="content_flex">
+  <div style="background-color: #003366;">
+    <div ><img src="./assets/autoguy.jpg" class="image_d" alt=""></div>
+
+  </div>
+
+
+  <!-- Contact Form Section -->
+  <div class="contact-form-container">
+    <h2>Contact Us</h2>
+    
+    <div class="form-flex">
+      <form id="contactForm" onsubmit="sendMail(); return false;">
+        
+        <!-- Name Input -->
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name" autofocus>
+        </div>
+        
+        <!-- Email Input -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Your email address">
+        </div>
+  
+        <!-- Phone Number Input -->
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required placeholder="(123)-456-7890">
+        </div>
+  
+        <!-- Message Input -->
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Type your message here..."></textarea>
+        </div>
+  
+        <!-- Submit Button -->
+        <button type="submit" class="btn-submit">Send</button><br><br>
+      </form>
+    </div>
+  </div>
+  <div style="background-color: #003366;">
+    <div ><img src="./assets/autoguy.jpg" class="image_d" alt=""></div>
+
+  </div>
+</div>
+
+
+    <!-- Footer -->
+    <section class="info-section">
+      <div class="info-column margin"><br>
+        <h3 class="margin">Contact Details</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 235 W 300 S, Provo, UT 84601</p>
+        <p><i class="fas fa-phone-alt"></i> (801)-373-9696</p>
+        <p><i class="fas fa-envelope"></i> support@JapaneseAuto.com</p>
+          <br>
+        <button class="appointment-button margin"> Book Appointment</button>
+      </div>
+      <div class="info-column margin">
+        <h3 class="margin">Working Hours</h3>
+        
+        <p>   Monday: 8:00 am - 5:30 pm</p>
+        <p>  Tuesday: 8:00 am - 5:30 pm</p>
+        <p>Wednesday: 8:00 am - 5:30 pm</p>
+        <p> Thursday: 8:00 am - 5:30 pm</p>
+        <p>   Friday: 8:00 am - 5:30 pm</p>
+        <p>Saturday: 8:00 am - 12:00 pm</p>
+        <p              >Sunday: Closed</p>
+      </div>
+      <div class="info-column ">
+          <h3 class="">Japanese Auto Repair</h3>
+          <p class="widthp " >
+          At Japanese Auto Repair Shop, we pride ourselves on delivering
+          reliable and top-quality service specializing in Japanese 
+          vehicles. With years of experience, we understand the 
+          intricacies of these cars and use the latest diagnostic 
+          tools and techniques to keep them running smoothly. 
+        </p>
+      </div>
+  </section>
+    
+  <footer>
+      <section class="social-media">
+          <a href="https://www.facebook.com" target="_blank" class="social-icon-header">
+              <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="social-icon-header">
+              <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" class="social-icon-header">
+              <i class="fab fa-tiktok"></i>
+          </a>
+      </section> <br>
+      <p>Japanese Auto Repair &copy; 2024</p>
+  </footer>
+
+</body>
+</html>
