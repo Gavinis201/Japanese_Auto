@@ -17,7 +17,16 @@ html, body {
     --text-white: #FFFFFF;
 }
 
-
+.top {
+    color: white;
+    top: 0;
+    height: 2.5em;
+    z-index: 10;  /* Ensure it stays above other content */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: .75px;
+}
 .innerleft{
     position: relative;
     display: flex;
@@ -606,6 +615,10 @@ textarea {
         flex-direction: row;
         gap: 2em;
     }
+    .hero{
+        height: 30em;
+    }
+    
     .location-info{
     display: none;
     }
@@ -696,16 +709,7 @@ textarea {
 
 
 /* Style for the sticky top bar */
-.top {
-    color: white;
-    top: 0;
-    height: 2.5em;
-    z-index: 10;  /* Ensure it stays above other content */
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: .75px;
-}
+
 
 
 
