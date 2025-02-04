@@ -48,32 +48,52 @@
 <header>
     <div class="nav-container">
         <div>
-            
-            <a href="./index.html" style="color: white"><img src="./assets/JapaneseAutoLogo.jpeg" height="65px" alt="Japanese Auto Repair Logo" ></a>
+            <a href="./index.html" style="color: white">
+                <img src="./assets/JapaneseAutoLogo.jpeg" height="65px" alt="Japanese Auto Repair Logo">
+            </a>
         </div>
+
+        <!-- Hamburger menu for mobile -->
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
         <nav class="nav-list" aria-label="Main Navigation">
             <ul>
-                <li class="nav-gold"><a href="#home" aria-label="Navigate to Home page">Home</a></li>
-                <li class="nav-gold"><a href="./services.html" aria-label="Learn about our services">Services</a></li>
-                <li class="nav-gold"><a href="./contact.html" aria-label="Contact us for inquiries">Contact</a></li>
-                <li class="nav-gold"><a href="./story.html" aria-label="Read about our story">Our Story</a></li>
+                <li class="nav-gold"><a href="#home">Home</a></li>
+                <li class="nav-gold"><a href="./services.html">Services</a></li>
+                <li class="nav-gold"><a href="./contact.html">Contact</a></li>
+                <li class="nav-gold"><a href="./story.html">Our Story</a></li>
             </ul>
         </nav>
+
         <div class="location-info">
-            <button class="appointment-button" aria-label="Call us at (801)-373-9696">📞 (801)-373-9696</button>
+            <button class="appointment-button">📞 (801)-373-9696</button>
             &nbsp;&nbsp;
-            <a href="https://www.facebook.com" target="_blank" class="social-icon-header" aria-label="Visit our Facebook page">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon-header">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com" target="_blank" class="social-icon-header" aria-label="Visit our Instagram profile">
+            <a href="https://www.instagram.com" target="_blank" class="social-icon-header">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com" target="_blank" class="social-icon-header" aria-label="Visit our TikTok profile">
+            <a href="https://www.tiktok.com" target="_blank" class="social-icon-header">
                 <i class="fab fa-tiktok"></i>
             </a>
         </div>
     </div>
 </header>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navList = document.querySelector(".nav-list");
+
+    menuToggle.addEventListener("click", function() {
+        navList.classList.toggle("active");
+    });
+});
+
+</script>
 
 
 
@@ -356,6 +376,7 @@
         </div>
       </section>
     
+      
       
      <footer>
         <section class="social-media">
