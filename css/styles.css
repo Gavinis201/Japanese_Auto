@@ -230,7 +230,7 @@ header {
 }
 .nav-gold a {
     display: block; /* Make the entire list item clickable */
-    padding: 30px 20px; /* Add padding to make the clickable area larger */
+    padding: 10px 10px; /* Add padding to make the clickable area larger */
     color: #fff; /* Set text color */
     text-decoration: none; /* Remove underline */
     border-radius: 5px; /* Optional: Add rounded corners */
