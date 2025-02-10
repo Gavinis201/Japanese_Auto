@@ -14,7 +14,7 @@ html, body {
 :root {
     --main-blue: #003366;
     --accent-gold: #FFD700;
-    --text-white: #FFFFFF;
+    --text-white: #f9f7f7;
 }
 
 .top {
