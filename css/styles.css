@@ -539,8 +539,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px;
-    gap: 4em;
+    padding: 25px;
+    gap: 3em;
 
 }
 .image_d{
@@ -1082,4 +1082,101 @@ textarea {
     height: 49;
     width: 58;
   }
+  
+.unique-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .unique-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .unique-gallery-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .unique-gallery-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+  }
+  
+  .unique-gallery-links a:hover {
+    background-color: #ddd;
+  }
+  
+  .unique-gallery-links a.active-link {
+    background-color: var(--main-blue);
+    color: white;
+  }
+  
+  .unique-gallery-container {
+    display: none; /* Hidden by default */
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 1000px;
+  }
+  
+  .unique-image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+  }
+  
+  .unique-image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .unique-image-grid img:hover{
+    transform: scale(1.1);
+    cursor: zoom-in;
+  }
+  @media screen and (max-width: 600px) {
+    .unique-gallery-links {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .unique-gallery-links a {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .unique-image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
 
+.unique-image-grid img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.unique-image-grid img.zoomed {
+    transform: scale(1.75); /* Enlarges the image when clicked */
+    z-index: 1000;
+    position: relative;
+    cursor: zoom-out; /* Changes cursor to indicate zoom out */
+}
