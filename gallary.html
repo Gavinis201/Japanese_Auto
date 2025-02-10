@@ -8,19 +8,22 @@
      <title>Japanese Auto - Reliable Auto Repair</title>
      <link rel="stylesheet" href="./css/styles.css">
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+     
  </head>
  <body>
  
      <!-- Header with contact and location info  -->
-      <div class="top">
+    <div class="top">
          <div class="innerleft">
              <p>235 W 300 S, Provo, UT 84601</p>
          </div>
          <div class="innerright">Mon-Fri: 8am-6pm, Sat: 8am-2pm</div>
-     </div>
+    </div>
  
-     <header>
+    <header>
         <div class="nav-container">
             <div>
                 <a href="./index.html" style="color: white">
@@ -35,11 +38,11 @@
     
             <nav class="nav-list" aria-label="Main Navigation">
                 <ul>
-                    <li class="nav-gold"><a href="#home">Home</a></li>
+                    <li class="nav-gold"><a href="./index.html">Home</a></li>
                     <li class="nav-gold"><a href="./services.html">Services</a></li>
                     <li class="nav-gold"><a href="./contact.html">Contact</a></li>
                     <li class="nav-gold"><a href="./story.html">Our Story</a></li>
-                    <li class="nav-gold"><a href="./story.html">Gallary</a></li>
+                    <li class="nav-gold"><a href="#">Gallary</a></li>
                 </ul>
             </nav>
     
@@ -62,55 +65,158 @@
      
      <section class="hero" style="background-image: url('./assets/autoguy.jpg'); height: 300px;padding: 20px;" >
         <div class="hero-content">
-            <h1>Services</h1><br>
+            <h1>Project Gallary</h1><br>
         </div>
     </section>
- 
- <section class="services-section">
-     <h2>Expert Auto Repair Services in Provo, Utah</h2>
-     <br><br>
-     <div class="cards-container">
-         <!-- Card 1 -->
-         <div class="service-card">
-             <img src="./assets/auto.jpg" alt="Diagnostic Services">
-             <h3>Diagnostic Services</h3>
-             <p>With our expertise spanning two decades and the utilization of cutting-edge technology, we excel at vehicle diagnostics. Count on us to decipher those perplexing warning lights and provide precise assessments. Rest assured that our diagnostic services guarantee peace of mind for every driver, ensuring optimal performance for your vehicle.</p>
-         </div>
-         <!-- Card 2 -->
-         <div class="service-card">
-             <img src="./assets/auto.jpg" alt="Brake Repairs">
-             <h3>Brake Repairs</h3>
-             <p>We specialize in providing comprehensive brake repair services to quickly diagnose and address any brake issues you may have. From worn pads and damaged rotors to brake fluid problems, trust us to deliver expert automotive solutions that guarantee your brakes are always in top-notch condition.</p>
-         </div>
-         <!-- Card 3 -->
-         <div class="service-card">
-             <img src="./assets/auto.jpg" alt="Auto Tune-Ups">
-             <h3>Auto Tune-Ups</h3>
-             <p>Our Auto Tune-Up service is the ultimate solution for maintaining your vehicle's smooth and efficient operation. We meticulously inspect and fine-tune every aspect of your engine, guaranteeing peak performance, improved fuel efficiency, and reduced emissions. With our top-notch tune-ups, you'll notice a substantial enhancement in your car's reliability and overall driving experience.</p>
-         </div>
-         <!-- Card 4 -->
-         <div class="service-card">
-             <img src="./assets/auto.jpg" alt="On-Spot Renewal">
-             <h3>On Spot Renewal</h3>
-             <p>Our On-Spot Renewal service simplifies the frequently time-consuming task of renewing your vehicle's registration. You can bypass the lengthy queues and tedious paperwork when you choose us, as we efficiently manage everything in-house. Embrace the ease and efficiency of hassle-free registration renewal by opting for our services.</p>
-         </div>
-         <!-- Card 5 -->
-         <div class="service-card">
-             <img src="./assets/auto.jpg" alt="Oil Change & Maintenance">
-             <h3>Oil Change & Maintenance</h3>
-             <p>Our Oil Change Service ensures quick and efficient oil changes, utilizing top-grade oils that keep your engine running smoothly and extend its lifespan. Moreover, our comprehensive oil maintenance checks cover all vital components, guaranteeing that your car remains reliable and efficient.</p>
-         </div>
-         <!-- Card 6 -->
-         <div class="service-card">
-             <img src="./assets/auto.jpg" alt="AC Repair Service">
-             <h3>AC Repair Service</h3>
-             <p>Experience ultimate comfort and coolness on scorching days with our unparalleled AC repair services. Our highly skilled car mechanics specialize in delivering swift solutions to any AC issues, efficiently restoring your car's cooling system to peak performance.</p>
-         </div>
-     </div>
- </section>
- 
-     
- 
+   
+  <div class="unique-gallery-links">
+    <a href="javascript:void(0);" onclick="toggleGallery('unique-gallery1')">Japanese Engine Rebuild </a>
+    <a href="javascript:void(0);" onclick="toggleGallery('unique-gallery2')">BG/Fuel & Air Induction Service</a>
+    <a href="javascript:void(0);" onclick="toggleGallery('unique-gallery3')">Toyota Engine Rebuild</a>
+    <a href="javascript:void(0);" onclick="toggleGallery('unique-gallery4')">Transmission & Clutch Replacement</a>
+    <a href="javascript:void(0);" onclick="toggleGallery('unique-gallery5')">Toyota Prius Battery Service</a>
+    <a href="javascript:void(0);" onclick="toggleGallery('unique-gallery6')">Japanese Cars, Trucks, & Minivans Service</a>
+  </div>
+
+  <div id="unique-gallery1" class="unique-gallery-container">
+    <div class="unique-image-grid">
+      <img src="./assets/EnginRebuild1.jpg" alt="Image 1">
+      <img src="./assets/EnginRebuild2.jpg" alt="Image 1">
+      <img src="./assets/EnginRebuild3.jpg" alt="Image 1">
+      <img src="./assets/EnginRebuild4.jpg" alt="Image 4">
+      <img src="./assets/EnginRebuild5.jpg" alt="Image 5">
+      <img src="./assets/EnginRebuild6.jpg" alt="Image 6">
+      <img src="./assets/EnginRebuild7.jpg" alt="Image 7">
+      <img src="./assets/EnginRebuild8.jpg" alt="Image 8">
+    </div>
+  </div>
+
+  <div id="unique-gallery2" class="unique-gallery-container">
+    <!-- Repeat same structure for gallery2 -->
+    <div class="unique-image-grid">
+        <img src="./assets/Fuel&Air1.JPG" alt="Image 1">
+        <img src="./assets/Fuel&Air2.JPG" alt="Image 1">
+        <img src="./assets/Fuel&Air3.png" alt="Image 1">
+        <img src="./assets/Fuel&Air5.png" alt="Image 1">
+        <img src="./assets/Fuel&Air6.JPG" alt="Image 1">
+        <img src="./assets/Fuel&Air8.jpeg" alt="Image 1">
+        <img src="./assets/Fuel&Air9.JPG" alt="Image 1">
+        <img src="./assets/Fuel&Air10.jpeg" alt="Image 1">
+        <img src="./assets/Fuel&Air12.jpeg" alt="Image 1">
+        <img src="./assets/Fuel&Air13.jpeg" alt="Image 1">
+        <img src="./assets/Fuel&Air11.JPG" alt="Image 1">
+        <img src="./assets/Fuel&Air4.JPG" alt="Image 1">
+        <img src="./assets/Fuel&Air7.JPG" alt="Image 1">
+        <img src="./assets/Fuel&Air14.jpeg" alt="Image 1">
+       
+      </div>
+  </div>
+
+  <div id="unique-gallery3" class="unique-gallery-container">
+    <!-- Repeat same structure for gallery3 -->
+    <div class="unique-image-grid">
+        <img src="./assets/toyotaEngine1.jpeg" alt="Image 1">
+        <img src="./assets/toyotaEngine2.jpeg" alt="Image 1">
+        <img src="./assets/toyotaEngine3.jpeg" alt="Image 1">
+        <img src="./assets/toyotaEngine4.jpeg" alt="Image 1">
+        <img src="./assets/toyotaEngine5.jpeg" alt="Image 1">
+        <img src="./assets/toyotaEngine6.jpeg" alt="Image 1">
+      </div>
+  </div>
+
+  <div id="unique-gallery4" class="unique-gallery-container">
+    <!-- Repeat same structure for gallery4 -->
+    <div class="unique-image-grid">
+        <img src="./assets/transmission1.jpeg" alt="Image 1">
+        <img src="./assets/transmission2.jpeg" alt="Image 1">
+        <img src="./assets/transmission3.jpeg" alt="Image 1">
+        <img src="./assets/transmission4.jpeg" alt="Image 1">
+        <img src="./assets/transmission5.jpeg" alt="Image 1">
+        <img src="./assets/transmission6.jpeg" alt="Image 1">
+        <img src="./assets/transmission7.jpeg" alt="Image 1">
+      </div>
+  </div>
+
+  <div id="unique-gallery5" class="unique-gallery-container">
+    <!-- Repeat same structure for gallery5 -->
+    <div class="unique-image-grid">
+        <img src="./assets/toyotaBattery1.jpeg" alt="Image 1">
+        <img src="./assets/toyotaBattery2.jpeg" alt="Image 1">
+        <img src="./assets/toyotaBattery3.jpeg" alt="Image 1">
+        <img src="./assets/toyotaBattery4.jpeg" alt="Image 1">
+        <img src="./assets/toyotaBattery5.jpeg" alt="Image 1">
+        <img src="./assets/toyotaBattery6.jpeg" alt="Image 1">
+        <img src="./assets/toyotaBattery7.jpeg" alt="Image 1">
+        <img src="./assets/toyotaBattery8.jpeg" alt="Image 1">
+      </div>
+  </div>
+
+  <div id="unique-gallery6" class="unique-gallery-container">
+    <!-- Repeat same structure for gallery6 -->
+    <div class="unique-image-grid">
+        <img src="./assets/JapCarsTrucks1.jpeg" alt="Image 1">
+        <img src="./assets/JapCarsTrucks2.jpeg" alt="Image 1">
+        <img src="./assets/JapCarsTrucks3.jpeg" alt="Image 1">
+        <img src="./assets/JapCarsTrucks4.jpeg" alt="Image 1">
+        <img src="./assets/JapCarsTrucks5.jpeg" alt="Image 1">
+      </div>
+  </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".unique-image-grid img");
+
+    images.forEach(img => {
+        img.addEventListener("click", function () {
+            this.classList.toggle("zoomed");
+        });
+
+        img.addEventListener("mouseleave", function () {
+            this.classList.remove("zoomed");
+        });
+    });
+});
+
+
+</script>
+
+  <script >
+   // This function toggles the visibility of the gallery and highlights the clicked link
+function toggleGallery(galleryId) {
+  // Hide all galleries
+  const galleries = document.querySelectorAll('.unique-gallery-container');
+  galleries.forEach(gallery => {
+    gallery.style.display = 'none';
+  });
+
+  // Show the selected gallery
+  const selectedGallery = document.getElementById(galleryId);
+  if (selectedGallery) {
+    selectedGallery.style.display = selectedGallery.style.display === 'block' ? 'none' : 'block';
+  }
+
+  // Get all gallery links and remove the active class
+  const links = document.querySelectorAll('.unique-gallery-links a');
+  links.forEach(link => {
+    link.classList.remove('active-link');
+  });
+
+  // Add active class to the clicked link
+  const clickedLink = document.querySelector(`a[href='javascript:void(0);'][onclick="toggleGallery('${galleryId}')"]`);
+  clickedLink.classList.add('active-link');
+}
+
+// This function sets the initial gallery and link as active
+window.onload = function() {
+  toggleGallery('unique-gallery1'); // Show the first gallery by default
+  const firstLink = document.querySelector('a[href="javascript:void(0);"][onclick="toggleGallery(\'unique-gallery1\')"]');
+  firstLink.classList.add('active-link'); // Mark the first link as active
+};
+
+
+  </script>
+      
+
      <!-- Footer -->
      <section class="info-section">
          <div class="info-column margin"><br>
