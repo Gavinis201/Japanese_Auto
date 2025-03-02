@@ -17,6 +17,16 @@ html, body {
     --text-white: #f9f7f7;
 }
 
+.JapaneseAutoLogo{
+    text-decoration: none;
+    font-size: 2.2em;
+    color: var(--main-blue);
+    padding: 20px ;
+    border-radius: 80%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+}
+
 .top {
     color: white;
     top: 0;
@@ -79,7 +89,14 @@ header {
     display: flex;
     align-items: center; /* Centers text vertically */
 }
-
+.location-info a img {
+    height: 2.2em;
+    width: auto;
+    display: block;
+}
+.location-info a img:hover {
+    transform: scale(1.2); /* Increases size on hover */
+}
 /* Moving Text Container */
 .banner-scroll {
     display: flex; /* Flex ensures multiple contents are aligned horizontally */
@@ -109,7 +126,6 @@ header {
 .carousel-section {
     width: 100%;
     padding: 3em ;
-    background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,7 +218,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: .7em;
     height: 3em;
     text-align: left;
     margin-left: 0px;
@@ -263,21 +279,21 @@ header {
 
 
 .appointment-button {
-    background-color: var(--accent-gold); /* Gold button background */
-    color: var(--main-blue); /* Text color matches main blue */
-    border: 1px solid var(--main-blue);
+    background-color: var(--main-blue); /* Gold button background */
+    color: white; /* Text color matches main blue */
     border-radius: 5px;
     font-size: 17px;
     cursor: pointer;
-    font-weight: bold;
     padding: 10px 20px; /* Spacing inside the button */
-    transition: background-color 0.3s ease
+    transition: background-color 0.3s ease;
+    border: none;
 
 }
 
 .appointment-button:hover {
-    background-color: var(--main-blue); /* Blue background on hover */
-    color: var(--accent-gold); 
+    background-color: white; /* Blue background on hover */
+    color: var(--main-blue); 
+    outline: 1px solid var(--main-blue);
     transition: background-color 0.3s ease/* Gold text on hover */
 }
 
@@ -393,7 +409,6 @@ header {
 /* section about the cards  */
 /* Section Background */
 .services-section {
-    background-color: var(--text-white); /* White background */
     padding: 50px 20px;
     text-align: center;
 }
@@ -411,8 +426,9 @@ header {
     gap: 40px;
     justify-content: center;
     align-items: stretch;
-    max-width: 1100px;
+    max-width: 3000px;
     margin: 0 auto;
+    padding: 50px;
     
 }
 
@@ -842,28 +858,25 @@ textarea {
     transition: background-color 0.3s ease;
   }
   
-  
+  .social-icon-header img {
+    height: 50px; /* Make all icons the same size */
+    width: auto;
+}
 
-
-
-  /* CAROUSEL REVIEWS */
- /* REVIEW CAROUSEL STYLING */
- .unique-carousel-section {
+.japanese-auto-reviews-section {
     padding: 20px;
-    max-width: 1200px; /* Increased the maximum width for the section */
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-/* Container for the Carousel */
-.unique-carousel-container {
+.japanese-auto-reviews-container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 
-/* Buttons for Navigation */
-.unique-carousel-button {
+.japanese-auto-reviews-button {
     background-color: var(--main-blue);
     border: none;
     color: #fff;
@@ -871,62 +884,61 @@ textarea {
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
-    width: 60px;  /* Slightly larger buttons */
-    height: 60px; /* Slightly larger buttons */
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2;
 }
-.unique-carousel-button:hover{
+.japanese-auto-reviews-button:hover {
     background-color: white;
     outline: 1px solid var(--main-blue);
     color: var(--main-blue);
-    transition: color 0.2s ease; /* Smooth transition for hover effect */
+    transition: color 0.2s ease;
 }
 
-.unique-prev-button {
+.japanese-auto-reviews-prev-btn {
     position: absolute;
     left: -70px;
 }
 
-.unique-next-button {
+.japanese-auto-reviews-next-btn {
     position: absolute;
     right: -70px;
 }
 
-/* Wrapper and Content for Carousel */
-.unique-carousel-wrapper {
+.japanese-auto-reviews-wrapper {
     overflow: hidden;
-    width: 80%;
+    width: 1000px; /* 300px * 3 cards */
 }
 
-/* Ensure the content is wide enough for the larger cards */
-.unique-carousel-content {
+.japanese-auto-reviews-content {
     display: flex;
     transition: transform 0.5s ease-in-out;
     position: relative;
 }
 
-/* Review Cards Styling */
-.unique-carousel-card {
-    flex: 0 0 calc(50% - 40px); /* Increased spacing between cards */
+.japanese-auto-reviews-card {
+    flex: 0 0 300px; /* Fixed width of 300px */
     margin: 20px;
-    background-color: #ffffff;
     padding: 30px;
     border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Larger shadow for bigger cards */
-    height: 450px; /* Increased card height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-    background-color: var(--main-blue);
+    background: linear-gradient(to bottom, #034383 0%, #003366 100%);
     color: white;
+    box-sizing: border-box;
 }
 
-.unique-carousel-card p {
-    font-size: 18pt; /* Larger font size for readability */
+
+
+.japanese-auto-reviews-card p {
+    font-size: 15pt;
     margin-bottom: 15px;
     color: white;
     padding: 20px;
@@ -934,20 +946,22 @@ textarea {
     line-height: 1.6;
 }
 
-.unique-carousel-card span {
+.japanese-auto-reviews-card span {
     font-size: 16pt;
     color: white;
     padding: 20px;
 }
 
-.star{
+.japanese-auto-reviews-stars {
     display: flex;
     flex-direction: row;
+    gap: 5px;
     margin-left: 14px;
     margin-top: 10px;
     color: var(--accent-gold);
 }
-.review_testimonial{
+
+.japanese-auto-reviews-title {
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -956,16 +970,15 @@ textarea {
     color: var(--main-blue);
     letter-spacing: 1.5pt;
 }
-.center_review{
+
+.japanese-auto-reviews-subtitle {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--main-blue);
     letter-spacing: 1.5pt;
-
 }
-
 .blue-stats-section {
     display: flex;
     justify-content: center;
@@ -1010,8 +1023,8 @@ textarea {
   }
   
   .book{
-    background-color: white;
-    color: var(--main-blue);
+    background: linear-gradient(to bottom, #034383 0%, #003366 100%);
+    color: white;
     width: 100%;
     padding: 30px;
   }
@@ -1026,7 +1039,8 @@ textarea {
 
   /* Section Background */
 .auto-stats-bg {
-    background-color: var(--main-blue); /* Blue background */
+    background: linear-gradient(to bottom, #034383 0%, #003366 100%);
+
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -1179,4 +1193,174 @@ textarea {
     z-index: 1000;
     position: relative;
     cursor: zoom-out; /* Changes cursor to indicate zoom out */
+}
+
+.appointment2-button {
+    background-color: var(--accent-gold); /* Gold button background */
+    color: var(--main-blue);/* Text color matches main blue */
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 10px 20px; /* Spacing inside the button */
+    transition: background-color 0.3s ease;
+    border: none;
+
+}
+
+.appointment2-button:hover {
+    background-color: var(--main-blue); /* Blue background on hover */
+    color: var(--accent-gold); 
+    outline: 1px solid var(--accent-gold);
+    transition: background-color 0.3s ease/* Gold text on hover */
+}
+
+.japaneseAutoXtremeServiceZ_layout {
+    display: flex;
+    min-height: calc(100vh - 8.5em - 230px); /* Adjust based on header/footer height */
+    padding: 20px;
+}
+
+.japaneseAutoXtremeServiceZ_sidebarZ {
+    width: 250px;
+    background-color: var(--main-blue);
+    color: white;
+    padding: 20px;
+    border: 1px solid white;
+    position: sticky;
+    top: 8.5em; /* Below header */
+    height: fit-content;
+}
+
+.japaneseAutoXtremeServiceZ_sidebarZ h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--accent-gold);
+}
+
+.japaneseAutoXtremeServiceZ_sidebarZ ul {
+    list-style: none;
+    padding: 0;
+}
+
+.japaneseAutoXtremeServiceZ_sidebarZ li {
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.japaneseAutoXtremeServiceZ_sidebarZ a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.japaneseAutoXtremeServiceZ_sidebarZ a:hover,
+.japaneseAutoXtremeServiceZ_sidebarZ a.active {
+    background-color: var(--accent-gold);
+    color: var(--main-blue);
+}
+
+.japaneseAutoXtremeServiceZ_contentZ {
+    flex: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Individual Service Cards Container (Hidden by Default) */
+.japaneseAutoXtremeServiceZ_detailZone {
+    display: none; /* Hidden initially */
+    flex-direction: column;
+    gap: 20px;
+    padding: 100px;
+
+}
+
+.japaneseAutoXtremeServiceZ_cardX {
+    display: none; /* Hidden by default */
+    background-color: var(--main-blue);
+    color: var(--text-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    text-align: center;
+}
+
+.japaneseAutoXtremeServiceZ_cardX.active {
+    display: block; /* Show when active */
+}
+
+.japaneseAutoXtremeServiceZ_cardX img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.japaneseAutoXtremeServiceZ_cardX h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.japaneseAutoXtremeServiceZ_cardX p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+    text-align: left;
+}
+
+/* Gallery Styling */
+.japaneseAutoXtremeServiceZ_galleryZap {
+    margin-top: 20px;
+    display: none; /* Hidden by default */
+}
+
+.japaneseAutoXtremeServiceZ_galleryZap.active {
+    display: block; /* Show when active */
+}
+
+.japaneseAutoXtremeServiceZ_galleryGridZ {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.japaneseAutoXtremeServiceZ_galleryGridZ img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.japaneseAutoXtremeServiceZ_galleryGridZ img:hover {
+    transform: scale(1.05);
+    cursor: zoom-in;
+}
+
+.japaneseAutoXtremeServiceZ_galleryGridZ img.zoomed {
+    transform: scale(1.75);
+    z-index: 1000;
+    position: relative;
+    cursor: zoom-out;
+}
+.cards-container_service {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 5000px;
+    margin: 0 auto;
+    padding: 40px;
+    
+}
+
+.services-section_services {
+    text-align: center;
 }
