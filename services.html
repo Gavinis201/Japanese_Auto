@@ -5,346 +5,315 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japanese Auto - Reliable Auto Repair</title>
+    <meta name="description" content="Explore expert auto repair services for Japanese vehicles at Japanese Auto Repair in Provo, UT.">
+    <title>Services - Japanese Auto Repair</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0bd961eb30.js" crossorigin="anonymous"></script>
-   
 </head>
 <body>
-<!-- Header with contact and location info -->
-<div class="top">
-    <div class="innerleft">
-        <p aria-label="Address: 235 West 300 South, Provo, Utah, 84601">235 W 300 S, Provo, UT 84601</p>
-    </div>
-    <div class="innerright" aria-label="Business hours: Monday to Friday, 8 AM to 6 PM. Saturday, 8 AM to 2 PM;">
-        Mon-Fri: 8am-6pm, Sat: 8am-2pm
-    </div>
-</div>
-
-<header>
-    <div class="nav-container">
-        <div>
-            <a href="./index.html" class="JapaneseAutoLogo">Japanese Auto Repair</a> 
+    <!-- Header (Unchanged) -->
+    <div class="top">
+        <div class="innerleft">
+            <p aria-label="Address: 235 West 300 South, Provo, Utah, 84601">235 W 300 S, Provo, UT 84601</p>
         </div>
-        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
-        <nav class="nav-list" aria-label="Main Navigation">
-            <ul>
-                <li class="nav-gold"><a href="./index.html">Home</a></li>
-                <li class="nav-gold"><a href=".#">Services</a></li>
-                <li class="nav-gold"><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="appointment-button">Get Quote</button>
-        <div class="location-info">
-            <a href="https://www.facebook.com" target="_blank"><img src="./assets/facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="./assets/Instagram.webp" alt="Instagram"></a>
-            <a href="https://www.google.com/maps/place/Japanese+Auto+Repair/" target="_blank"><img src="./assets/google.webp" alt="Google Maps"></a>
+        <div class="innerright" aria-label="Business hours: Monday to Friday, 8 AM to 6 PM. Saturday, 8 AM to 2 PM;">
+            Mon-Fri: 8am-6pm, Sat: 8am-2pm
         </div>
     </div>
-</header>
+    <header>
+        <div class="nav-container">
+            <div>
+                <a href="./index.html" class="JapaneseAutoLogo">Japanese Auto Repair</a> 
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <nav class="nav-list" aria-label="Main Navigation">
+                <ul>
+                    <li class="nav-gold"><a href="./index.html">Home</a></li>
+                    <li class="nav-gold"><a href="./services.html">Services</a></li>
+                    <li class="nav-gold"><a href="./contact.html">Contact</a></li>
+                    <li class="nav-gold"><a href="./about.html">About</a></li>
+                </ul>
+            </nav>
+            <button class="appointment-button">Get Quote</button>
+            <div class="location-info">
+                <a href="https://www.facebook.com" target="_blank"><img src="./assets/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="./assets/Instagram.webp" alt="Instagram"></a>
+                <a href="https://www.google.com/maps/place/Japanese+Auto+Repair/" target="_blank"><img src="./assets/google.webp" alt="Google Maps"></a>
+            </div>
+        </div>
+    </header>
 
-<!-- Middle Section: Sidebar and Services -->
-<section class="japaneseAutoXtremeServiceZ_layout">
-    <!-- Sidebar Menu -->
-    <div class="japaneseAutoXtremeServiceZ_sidebarZ">
-        <ul>
-            <span style="border: none;"><li><h3>Main Services</h3></li></span>
-            <li><a href="javascript:void(0);" onclick="showService('default')" class="active">Main Services</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('diagnostic')">Diagnostic Services</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('brake')">Brake Repairs</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('tuneup')">Auto Tune-Ups</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('renewal')">On Spot Renewal</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('oil')">Oil Change & Maintenance</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('ac')">AC Repair Service</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('engine')">Engine Rebuild</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('fuel-air')">Fuel & Air Induction</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('transmission')">Transmission & Clutch</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('battery')">Toyota Prius Battery</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('general')">General Japanese Vehicles</a></li>
-        </ul>
-    </div>
+    <!-- Main Content with Updated Styling -->
+    <main class="services-page">
+        <!-- Hero Section -->
+        <section class="services-hero">
+            <div class="hero-content">
+                <h1>Our Services</h1>
+                <p>Expert repair and maintenance for Japanese vehicles, delivered with precision and care.</p>
+            </div>
+        </section>
 
-    <!-- Service Content -->
-    <div class="japaneseAutoXtremeServiceZ_contentZ">
-        <!-- Default Grid (Visible on Load) -->
-        <section class="services-section_services" id="default-services">
-       
-            <div class="cards-container_service">
-                
-                <div class="service-card" aria-labelledby="diagnostic-title" aria-describedby="diagnostic-desc">
-                    <img src="./assets/auto.jpg" alt="Mechanic inspecting a car engine for diagnostic services">
-                    <h3 id="diagnostic-title">Diagnostic Services</h3>
-                    <p id="diagnostic-desc">With our expertise spanning two decades and the utilization of cutting-edge technology, we excel at vehicle diagnostics.</p>
+        <!-- Services Section -->
+        <section class="services-container">
+            <!-- Sidebar -->
+            <aside class="services-sidebar">
+                <h2>Service Categories</h2>
+                <ul>
+                    <li><a href="javascript:void(0);" onclick="showService('default')" class="active">Main Services</a></li>
+                    <li><a href="javascript:void(0);" onclick="showService('diagnostic')">Diagnostic Services</a></li>
+                    <li><a href="javascript:void(0);" onclick="showService('brake')">Brake Repairs</a></li>
+                    <li><a href="javascript:void(0);" onclick="showService('tuneup')">Auto Tune-Ups</a></li>
+                    <li><a href="javascript:void(0);" onclick="showService('renewal')">On Spot Renewal</a></li>
+                    <li><a href="javascript:void(0);" onclick="showService('oil')">Oil Change & Maintenance</a></li>
+                    <li><a href="javascript:void(0);" onclick="showService('ac')">AC Repair Service</a></li>
+                    <li><a href="javascript:void(0);" onclick="showService('engine')">Engine Rebuild</a></li>
+                    <li><a href="javascript:void(0);" onclick="showService('fuel-air')">Fuel & Air Induction</a></li>
+                    <li><a href="javascript:void(0);" onclick="showService('transmission')">Transmission & Clutch</a></li>
+                    <li><a href="javascript:void(0);" onclick="showService('battery')">Toyota Prius Battery</a></li>
+                    <li><a href="javascript:void(0);" onclick="showService('general')">General Japanese Vehicles</a></li>
+                </ul>
+            </aside>
+
+            <!-- Services Content -->
+            <div class="services-content">
+                <!-- Default Services Grid -->
+                <div class="services-grid" id="default-services">
+                    <article class="service-card" aria-labelledby="diagnostic-title" aria-describedby="diagnostic-desc">
+                        <img src="./assets/auto.jpg" alt="Mechanic inspecting a car engine for diagnostic services" loading="lazy">
+                        <h3 id="diagnostic-title">Diagnostic Services</h3>
+                        <p id="diagnostic-desc">With our expertise spanning two decades and the utilization of cutting-edge technology, we excel at vehicle diagnostics.</p>
+                    </article>
+                    <article class="service-card" aria-labelledby="brake-title" aria-describedby="brake-desc">
+                        <img src="./assets/auto.jpg" alt="Close-up of brake components being repaired" loading="lazy">
+                        <h3 id="brake-title">Brake Repairs</h3>
+                        <p id="brake-desc">We specialize in providing comprehensive brake repair services to quickly diagnose and address any brake issues.</p>
+                    </article>
+                    <article class="service-card" aria-labelledby="tuneup-title" aria-describedby="tuneup-desc">
+                        <img src="./assets/auto.jpg" alt="Mechanic performing an auto tune-up under the hood of a car" loading="lazy">
+                        <h3 id="tuneup-title">Auto Tune-Ups</h3>
+                        <p id="tuneup-desc">Our Auto Tune-Up service is the ultimate solution for maintaining your vehicle's smooth and efficient operation.</p>
+                    </article>
+                    <article class="service-card" aria-labelledby="renewal-title" aria-describedby="renewal-desc">
+                        <img src="./assets/auto.jpg" alt="Friendly staff assisting with vehicle registration renewal" loading="lazy">
+                        <h3 id="renewal-title">On Spot Renewal</h3>
+                        <p id="renewal-desc">Our On-Spot Renewal service simplifies the frequently time-consuming task of renewing your vehicle's registration.</p>
+                    </article>
+                    <article class="service-card" aria-labelledby="oil-title" aria-describedby="oil-desc">
+                        <img src="./assets/auto.jpg" alt="Oil being poured into a car engine during a maintenance service" loading="lazy">
+                        <h3 id="oil-title">Oil Change & Maintenance</h3>
+                        <p id="oil-desc">Our Oil Change Service ensures quick and efficient oil changes, utilizing top-grade oils.</p>
+                    </article>
+                    <article class="service-card" aria-labelledby="ac-title" aria-describedby="ac-desc">
+                        <img src="./assets/auto.jpg" alt="AC system repair in progress with a technician using specialized tools" loading="lazy">
+                        <h3 id="ac-title">AC Repair Service</h3>
+                        <p id="ac-desc">Experience ultimate comfort and coolness on scorching days with our unparalleled AC repair services.</p>
+                    </article>
                 </div>
-                <div class="service-card" aria-labelledby="brake-title" aria-describedby="brake-desc">
-                    <img src="./assets/auto.jpg" alt="Close-up of brake components being repaired">
-                    <h3 id="brake-title">Brake Repairs</h3>
-                    <p id="brake-desc">We specialize in providing comprehensive brake repair services to quickly diagnose and address any brake issues.</p>
-                </div>
-                <div class="service-card" aria-labelledby="tuneup-title" aria-describedby="tuneup-desc">
-                    <img src="./assets/auto.jpg" alt="Mechanic performing an auto tune-up under the hood of a car">
-                    <h3 id="tuneup-title">Auto Tune-Ups</h3>
-                    <p id="tuneup-desc">Our Auto Tune-Up service is the ultimate solution for maintaining your vehicle's smooth and efficient operation.</p>
-                </div>
-                <div class="service-card" aria-labelledby="renewal-title" aria-describedby="renewal-desc">
-                    <img src="./assets/auto.jpg" alt="Friendly staff assisting with vehicle registration renewal">
-                    <h3 id="renewal-title">On Spot Renewal</h3>
-                    <p id="renewal-desc">Our On-Spot Renewal service simplifies the frequently time-consuming task of renewing your vehicle's registration.</p>
-                </div>
-                <div class="service-card" aria-labelledby="oil-title" aria-describedby="oil-desc">
-                    <img src="./assets/auto.jpg" alt="Oil being poured into a car engine during a maintenance service">
-                    <h3 id="oil-title">Oil Change & Maintenance</h3>
-                    <p id="oil-desc">Our Oil Change Service ensures quick and efficient oil changes, utilizing top-grade oils.</p>
-                </div>
-                <div class="service-card" aria-labelledby="ac-title" aria-describedby="ac-desc">
-                    <img src="./assets/auto.jpg" alt="AC system repair in progress with a technician using specialized tools">
-                    <h3 id="ac-title">AC Repair Service</h3>
-                    <p id="ac-desc">Experience ultimate comfort and coolness on scorching days with our unparalleled AC repair services.</p>
+
+                <!-- Individual Service Details -->
+                <div class="service-details" id="individual-services">
+                    <article class="service-detail" id="diagnostic">
+                        <img src="./assets/auto.jpg" alt="Diagnostic Services" loading="lazy">
+                        <h3>Diagnostic Services</h3>
+                        <p>With our expertise spanning two decades and the utilization of cutting-edge technology, we excel at vehicle diagnostics. Count on us to decipher those perplexing warning lights and provide precise assessments.</p>
+                    </article>
+                    <article class="service-detail" id="brake">
+                        <img src="./assets/auto.jpg" alt="Brake Repairs" loading="lazy">
+                        <h3>Brake Repairs</h3>
+                        <p>We specialize in providing comprehensive brake repair services to quickly diagnose and address any brake issues you may have, ensuring your safety on the road.</p>
+                    </article>
+                    <article class="service-detail" id="tuneup">
+                        <img src="./assets/auto.jpg" alt="Auto Tune-Ups" loading="lazy">
+                        <h3>Auto Tune-Ups</h3>
+                        <p>Our Auto Tune-Up service meticulously inspects and fine-tunes your engine for peak performance, improved fuel efficiency, and reduced emissions.</p>
+                    </article>
+                    <article class="service-detail" id="renewal">
+                        <img src="./assets/auto.jpg" alt="On-Spot Renewal" loading="lazy">
+                        <h3>On Spot Renewal</h3>
+                        <p>Simplify the task of renewing your vehicle’s registration with our efficient, in-house On-Spot Renewal service.</p>
+                    </article>
+                    <article class="service-detail" id="oil">
+                        <img src="./assets/auto.jpg" alt="Oil Change & Maintenance" loading="lazy">
+                        <h3>Oil Change & Maintenance</h3>
+                        <p>Quick and efficient oil changes with top-grade oils, plus comprehensive maintenance checks to keep your engine running smoothly.</p>
+                    </article>
+                    <article class="service-detail" id="ac">
+                        <img src="./assets/auto.jpg" alt="AC Repair Service" loading="lazy">
+                        <h3>AC Repair Service</h3>
+                        <p>Swift solutions to restore your car’s cooling system to peak performance, ensuring comfort in any weather.</p>
+                    </article>
+                    <article class="service-detail" id="engine">
+                        <h3>Japanese Engine Rebuild</h3>
+                        <p>Expert rebuilding of Japanese vehicle engines with precision and care.</p>
+                        <div class="gallery-grid" id="engine-gallery">
+                            <img src="./assets/EnginRebuild1.jpg" alt="Engine Rebuild 1" loading="lazy">
+                            <img src="./assets/EnginRebuild2.jpg" alt="Engine Rebuild 2" loading="lazy">
+                            <img src="./assets/EnginRebuild3.jpg" alt="Engine Rebuild 3" loading="lazy">
+                            <img src="./assets/EnginRebuild4.jpg" alt="Engine Rebuild 4" loading="lazy">
+                            <img src="./assets/EnginRebuild5.jpg" alt="Engine Rebuild 5" loading="lazy">
+                            <img src="./assets/EnginRebuild6.jpg" alt="Engine Rebuild 6" loading="lazy">
+                            <img src="./assets/EnginRebuild7.jpg" alt="Engine Rebuild 7" loading="lazy">
+                            <img src="./assets/EnginRebuild8.jpg" alt="Engine Rebuild 8" loading="lazy">
+                        </div>
+                    </article>
+                    <article class="service-detail" id="fuel-air">
+                        <h3>BG/Fuel & Air Induction Service</h3>
+                        <p>Comprehensive fuel and air induction services to optimize engine performance.</p>
+                        <div class="gallery-grid" id="fuel-air-gallery">
+                            <img src="./assets/Fuel&Air1.JPG" alt="Fuel & Air 1" loading="lazy">
+                            <img src="./assets/Fuel&Air2.JPG" alt="Fuel & Air 2" loading="lazy">
+                            <img src="./assets/Fuel&Air3.png" alt="Fuel & Air 3" loading="lazy">
+                            <img src="./assets/Fuel&Air5.png" alt="Fuel & Air 5" loading="lazy">
+                            <img src="./assets/Fuel&Air6.JPG" alt="Fuel & Air 6" loading="lazy">
+                            <img src="./assets/Fuel&Air8.jpeg" alt="Fuel & Air 8" loading="lazy">
+                            <img src="./assets/Fuel&Air9.JPG" alt="Fuel & Air 9" loading="lazy">
+                            <img src="./assets/Fuel&Air10.jpeg" alt="Fuel & Air 10" loading="lazy">
+                            <img src="./assets/Fuel&Air12.jpeg" alt="Fuel & Air 12" loading="lazy">
+                            <img src="./assets/Fuel&Air13.jpeg" alt="Fuel & Air 13" loading="lazy">
+                            <img src="./assets/Fuel&Air11.JPG" alt="Fuel & Air 11" loading="lazy">
+                            <img src="./assets/Fuel&Air4.JPG" alt="Fuel & Air 4" loading="lazy">
+                            <img src="./assets/Fuel&Air7.JPG" alt="Fuel & Air 7" loading="lazy">
+                            <img src="./assets/Fuel&Air14.jpeg" alt="Fuel & Air 14" loading="lazy">
+                        </div>
+                    </article>
+                    <article class="service-detail" id="transmission">
+                        <h3>Transmission & Clutch Replacement</h3>
+                        <p>Professional replacement and repair of transmissions and clutches.</p>
+                        <div class="gallery-grid" id="transmission-gallery">
+                            <img src="./assets/transmission1.jpeg" alt="Transmission 1" loading="lazy">
+                            <img src="./assets/transmission2.jpeg" alt="Transmission 2" loading="lazy">
+                            <img src="./assets/transmission3.jpeg" alt="Transmission 3" loading="lazy">
+                            <img src="./assets/transmission4.jpeg" alt="Transmission 4" loading="lazy">
+                            <img src="./assets/transmission5.jpeg" alt="Transmission 5" loading="lazy">
+                            <img src="./assets/transmission6.jpeg" alt="Transmission 6" loading="lazy">
+                            <img src="./assets/transmission7.jpeg" alt="Transmission 7" loading="lazy">
+                        </div>
+                    </article>
+                    <article class="service-detail" id="battery">
+                        <h3>Toyota Prius Battery Service</h3>
+                        <p>Specialized battery service for Toyota Prius vehicles.</p>
+                        <div class="gallery-grid" id="battery-gallery">
+                            <img src="./assets/toyotaBattery1.jpeg" alt="Battery 1" loading="lazy">
+                            <img src="./assets/toyotaBattery2.jpeg" alt="Battery 2" loading="lazy">
+                            <img src="./assets/toyotaBattery3.jpeg" alt="Battery 3" loading="lazy">
+                            <img src="./assets/toyotaBattery4.jpeg" alt="Battery 4" loading="lazy">
+                            <img src="./assets/toyotaBattery5.jpeg" alt="Battery 5" loading="lazy">
+                            <img src="./assets/toyotaBattery6.jpeg" alt="Battery 6" loading="lazy">
+                            <img src="./assets/toyotaBattery7.jpeg" alt="Battery 7" loading="lazy">
+                            <img src="./assets/toyotaBattery8.jpeg" alt="Battery 8" loading="lazy">
+                        </div>
+                    </article>
+                    <article class="service-detail" id="general">
+                        <h3>Japanese Cars, Trucks, & Minivans Service</h3>
+                        <p>General service and maintenance for all Japanese cars, trucks, and minivans.</p>
+                        <div class="gallery-grid" id="general-gallery">
+                            <img src="./assets/JapCarsTrucks1.jpeg" alt="General 1" loading="lazy">
+                            <img src="./assets/JapCarsTrucks2.jpeg" alt="General 2" loading="lazy">
+                            <img src="./assets/JapCarsTrucks3.jpeg" alt="General 3" loading="lazy">
+                            <img src="./assets/JapCarsTrucks4.jpeg" alt="General 4" loading="lazy">
+                            <img src="./assets/JapCarsTrucks5.jpeg" alt="General 5" loading="lazy">
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Individual Service Cards and Galleries (Hidden by Default) -->
-        <div class="japaneseAutoXtremeServiceZ_detailZone" id="individual-services">
-            <div class="japaneseAutoXtremeServiceZ_cardX" id="individual-services">
-                <h3>Main Services</h3>
-                <p>With our expertise spanning two decades and the utilization of cutting-edge technology, we excel at vehicle diagnostics. Count on us to decipher those perplexing warning lights and provide precise assessments. Rest assured that our diagnostic services guarantee peace of mind for every driver, ensuring optimal performance for your vehicle.</p>
-            </div>
-            <!-- Diagnostic Services -->
-            <div class="japaneseAutoXtremeServiceZ_cardX" id="diagnostic">
-                <img src="./assets/auto.jpg" alt="Diagnostic Services">
-                <h3>Diagnostic Services</h3>
-                <p>With our expertise spanning two decades and the utilization of cutting-edge technology, we excel at vehicle diagnostics. Count on us to decipher those perplexing warning lights and provide precise assessments. Rest assured that our diagnostic services guarantee peace of mind for every driver, ensuring optimal performance for your vehicle.</p>
-            </div>
+        <!-- Call-to-Action Section -->
+        <section class="services-cta">
+            <h2>Need a Service?</h2>
+            <p>Contact us today to get a quote or schedule an appointment for any of our expert services.</p>
+            <a href="./contact.html" class="cta-button">Get Started</a>
+        </section>
+    </main>
 
-            <!-- Brake Repairs -->
-            <div class="japaneseAutoXtremeServiceZ_cardX" id="brake">
-                <img src="./assets/auto.jpg" alt="Brake Repairs">
-                <h3>Brake Repairs</h3>
-                <p>We specialize in providing comprehensive brake repair services to quickly diagnose and address any brake issues you may have. From worn pads and damaged rotors to brake fluid problems, trust us to deliver expert automotive solutions that guarantee your brakes are always in top-notch condition.</p>
-            </div>
-
-            <!-- Auto Tune-Ups -->
-            <div class="japaneseAutoXtremeServiceZ_cardX" id="tuneup">
-                <img src="./assets/auto.jpg" alt="Auto Tune-Ups">
-                <h3>Auto Tune-Ups</h3>
-                <p>Our Auto Tune-Up service is the ultimate solution for maintaining your vehicle's smooth and efficient operation. We meticulously inspect and fine-tune every aspect of your engine, guaranteeing peak performance, improved fuel efficiency, and reduced emissions. With our top-notch tune-ups, you'll notice a substantial enhancement in your car's reliability and overall driving experience.</p>
-            </div>
-
-            <!-- On Spot Renewal -->
-            <div class="japaneseAutoXtremeServiceZ_cardX" id="renewal">
-                <img src="./assets/auto.jpg" alt="On-Spot Renewal">
-                <h3>On Spot Renewal</h3>
-                <p>Our On-Spot Renewal service simplifies the frequently time-consuming task of renewing your vehicle's registration. You can bypass the lengthy queues and tedious paperwork when you choose us, as we efficiently manage everything in-house. Embrace the ease and efficiency of hassle-free registration renewal by opting for our services.</p>
-            </div>
-
-            <!-- Oil Change & Maintenance -->
-            <div class="japaneseAutoXtremeServiceZ_cardX" id="oil">
-                <img src="./assets/auto.jpg" alt="Oil Change & Maintenance">
-                <h3>Oil Change & Maintenance</h3>
-                <p>Our Oil Change Service ensures quick and efficient oil changes, utilizing top-grade oils that keep your engine running smoothly and extend its lifespan. Moreover, our comprehensive oil maintenance checks cover all vital components, guaranteeing that your car remains reliable and efficient.</p>
-            </div>
-
-            <!-- AC Repair Service -->
-            <div class="japaneseAutoXtremeServiceZ_cardX" id="ac">
-                <img src="./assets/auto.jpg" alt="AC Repair Service">
-                <h3>AC Repair Service</h3>
-                <p>Experience ultimate comfort and coolness on scorching days with our unparalleled AC repair services. Our highly skilled car mechanics specialize in delivering swift solutions to any AC issues, efficiently restoring your car's cooling system to peak performance.</p>
-            </div>
-
-            <!-- Engine Rebuild -->
-            <div class="japaneseAutoXtremeServiceZ_cardX" id="engine">
-                <h3>Japanese Engine Rebuild</h3>
-                <p>Expert rebuilding of Japanese vehicle engines with precision and care.</p>
-            </div>
-            <div class="japaneseAutoXtremeServiceZ_galleryZap" id="engine-gallery">
-                <div class="japaneseAutoXtremeServiceZ_galleryGridZ">
-                    <img src="./assets/EnginRebuild1.jpg" alt="Engine Rebuild 1">
-                    <img src="./assets/EnginRebuild2.jpg" alt="Engine Rebuild 2">
-                    <img src="./assets/EnginRebuild3.jpg" alt="Engine Rebuild 3">
-                    <img src="./assets/EnginRebuild4.jpg" alt="Engine Rebuild 4">
-                    <img src="./assets/EnginRebuild5.jpg" alt="Engine Rebuild 5">
-                    <img src="./assets/EnginRebuild6.jpg" alt="Engine Rebuild 6">
-                    <img src="./assets/EnginRebuild7.jpg" alt="Engine Rebuild 7">
-                    <img src="./assets/EnginRebuild8.jpg" alt="Engine Rebuild 8">
-                </div>
-            </div>
-
-            <!-- Fuel & Air Induction -->
-            <div class="japaneseAutoXtremeServiceZ_cardX" id="fuel-air">
-                <h3>BG/Fuel & Air Induction Service</h3>
-                <p>Comprehensive fuel and air induction services to optimize engine performance.</p>
-            </div>
-            <div class="japaneseAutoXtremeServiceZ_galleryZap" id="fuel-air-gallery">
-                <div class="japaneseAutoXtremeServiceZ_galleryGridZ">
-                    <img src="./assets/Fuel&Air1.JPG" alt="Fuel & Air 1">
-                    <img src="./assets/Fuel&Air2.JPG" alt="Fuel & Air 2">
-                    <img src="./assets/Fuel&Air3.png" alt="Fuel & Air 3">
-                    <img src="./assets/Fuel&Air5.png" alt="Fuel & Air 5">
-                    <img src="./assets/Fuel&Air6.JPG" alt="Fuel & Air 6">
-                    <img src="./assets/Fuel&Air8.jpeg" alt="Fuel & Air 8">
-                    <img src="./assets/Fuel&Air9.JPG" alt="Fuel & Air 9">
-                    <img src="./assets/Fuel&Air10.jpeg" alt="Fuel & Air 10">
-                    <img src="./assets/Fuel&Air12.jpeg" alt="Fuel & Air 12">
-                    <img src="./assets/Fuel&Air13.jpeg" alt="Fuel & Air 13">
-                    <img src="./assets/Fuel&Air11.JPG" alt="Fuel & Air 11">
-                    <img src="./assets/Fuel&Air4.JPG" alt="Fuel & Air 4">
-                    <img src="./assets/Fuel&Air7.JPG" alt="Fuel & Air 7">
-                    <img src="./assets/Fuel&Air14.jpeg" alt="Fuel & Air 14">
-                </div>
-            </div>
-
-            <!-- Transmission & Clutch -->
-            <div class="japaneseAutoXtremeServiceZ_cardX" id="transmission">
-                <h3>Transmission & Clutch Replacement</h3>
-                <p>Professional replacement and repair of transmissions and clutches.</p>
-            </div>
-            <div class="japaneseAutoXtremeServiceZ_galleryZap" id="transmission-gallery">
-                <div class="japaneseAutoXtremeServiceZ_galleryGridZ">
-                    <img src="./assets/transmission1.jpeg" alt="Transmission 1">
-                    <img src="./assets/transmission2.jpeg" alt="Transmission 2">
-                    <img src="./assets/transmission3.jpeg" alt="Transmission 3">
-                    <img src="./assets/transmission4.jpeg" alt="Transmission 4">
-                    <img src="./assets/transmission5.jpeg" alt="Transmission 5">
-                    <img src="./assets/transmission6.jpeg" alt="Transmission 6">
-                    <img src="./assets/transmission7.jpeg" alt="Transmission 7">
-                </div>
-            </div>
-
-            <!-- Toyota Prius Battery -->
-            <div class="japaneseAutoXtremeServiceZ_cardX" id="battery">
-                <h3>Toyota Prius Battery Service</h3>
-                <p>Specialized battery service for Toyota Prius vehicles.</p>
-            </div>
-            <div class="japaneseAutoXtremeServiceZ_galleryZap" id="battery-gallery">
-                <div class="japaneseAutoXtremeServiceZ_galleryGridZ">
-                    <img src="./assets/toyotaBattery1.jpeg" alt="Battery 1">
-                    <img src="./assets/toyotaBattery2.jpeg" alt="Battery 2">
-                    <img src="./assets/toyotaBattery3.jpeg" alt="Battery 3">
-                    <img src="./assets/toyotaBattery4.jpeg" alt="Battery 4">
-                    <img src="./assets/toyotaBattery5.jpeg" alt="Battery 5">
-                    <img src="./assets/toyotaBattery6.jpeg" alt="Battery 6">
-                    <img src="./assets/toyotaBattery7.jpeg" alt="Battery 7">
-                    <img src="./assets/toyotaBattery8.jpeg" alt="Battery 8">
-                </div>
-            </div>
-
-            <!-- General Japanese Vehicles -->
-            <div class="japaneseAutoXtremeServiceZ_cardX" id="general">
-                <h3>Japanese Cars, Trucks, & Minivans Service</h3>
-                <p>General service and maintenance for all Japanese cars, trucks, and minivans.</p>
-            </div>
-            <div class="japaneseAutoXtremeServiceZ_galleryZap" id="general-gallery">
-                <div class="japaneseAutoXtremeServiceZ_galleryGridZ">
-                    <img src="./assets/JapCarsTrucks1.jpeg" alt="General 1">
-                    <img src="./assets/JapCarsTrucks2.jpeg" alt="General 2">
-                    <img src="./assets/JapCarsTrucks3.jpeg" alt="General 3">
-                    <img src="./assets/JapCarsTrucks4.jpeg" alt="General 4">
-                    <img src="./assets/JapCarsTrucks5.jpeg" alt="General 5">
-                </div>
-            </div>
+    <!-- Footer (Unchanged) -->
+    <section class="info-section">
+        <div class="info-column margin"><br>
+            <h3 class="margin">Contact Details</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 235 W 300 S, Provo, UT 84601</p>
+            <p><i class="fas fa-phone-alt"></i> (801)-373-9696</p>
+            <p><i class="fas fa-envelope"></i> support@JapaneseAuto.com</p>
+            <br>
+            <button class="appointment-button margin">Book Appointment</button>
         </div>
-    </div>
-</section>
+        <div class="info-column margin">
+            <h3 class="margin">Working Hours</h3>
+            <p>Monday: 8:00 am - 5:30 pm</p>
+            <p>Tuesday: 8:00 am - 5:30 pm</p>
+            <p>Wednesday: 8:00 am - 5:30 pm</p>
+            <p>Thursday: 8:00 am - 5:30 pm</p>
+            <p>Friday: 8:00 am - 5:30 pm</p>
+            <p>Saturday: 8:00 am - 12:00 pm</p>
+            <p>Sunday: Closed</p>
+        </div>
+        <div class="info-column">
+            <h3 class="">Japanese Auto Repair</h3>
+            <p class="widthp">
+                At Japanese Auto Repair Shop, we pride ourselves on delivering reliable and top-quality service specializing in Japanese vehicles. With years of experience, we understand the intricacies of these cars and use the latest diagnostic tools and techniques to keep them running smoothly.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <section class="social-media">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon-header">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon-header">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.google.com/maps/place/Japanese+Auto+Repair/@40.229511,-111.6654419,1479m/data=!3m2!1e3!4b1!4m6!3m5!1s0x874d975686c1f0d9:0xbdfc25cc4bee2f51!8m2!3d40.229511!4d-111.662867!16s%2Fg%2F1td6ylgz!5m1!1e3?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="social-icon-header" aria-label="Visit our TikTok page">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="sr-only">TikTok</span>
+            </a>
+        </section> <br>
+        <p>Japanese Auto Repair © 2024</p>
+    </footer>
 
-<!-- Footer -->
-<section class="info-section">
-    <div class="info-column margin"><br>
-        <h3 class="margin">Contact Details</h3>
-        <p><i class="fas fa-map-marker-alt"></i> 235 W 300 S, Provo, UT 84601</p>
-        <p><i class="fas fa-phone-alt"></i> (801)-373-9696</p>
-        <p><i class="fas fa-envelope"></i> support@JapaneseAuto.com</p>
-        <br>
-        <button class="appointment-button margin">Book Appointment</button>
-    </div>
-    <div class="info-column margin">
-        <h3 class="margin">Working Hours</h3>
-        <p>Monday: 8:00 am - 5:30 pm</p>
-        <p>Tuesday: 8:00 am - 5:30 pm</p>
-        <p>Wednesday: 8:00 am - 5:30 pm</p>
-        <p>Thursday: 8:00 am - 5:30 pm</p>
-        <p>Friday: 8:00 am - 5:30 pm</p>
-        <p>Saturday: 8:00 am - 12:00 pm</p>
-        <p>Sunday: Closed</p>
-    </div>
-    <div class="info-column">
-        <h3 class="">Japanese Auto Repair</h3>
-        <p class="widthp">
-            At Japanese Auto Repair Shop, we pride ourselves on delivering reliable and top-quality service specializing in Japanese vehicles. With years of experience, we understand the intricacies of these cars and use the latest diagnostic tools and techniques to keep them running smoothly.
-        </p>
-    </div>
-</section>
+    <!-- JavaScript (Unchanged) -->
+    <script>
+        function showService(serviceId) {
+            const defaultGrid = document.getElementById('default-services');
+            const individualServices = document.getElementById('individual-services');
+            const cards = document.querySelectorAll('.service-detail');
+            const galleries = document.querySelectorAll('.gallery-grid');
+            const links = document.querySelectorAll('.services-sidebar a');
 
-<footer>
-    <section class="social-media">
-        <a href="https://www.facebook.com" target="_blank" class="social-icon-header">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com" target="_blank" class="social-icon-header">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.google.com/maps/place/Japanese+Auto+Repair/@40.229511,-111.6654419,1479m/data=!3m2!1e3!4b1!4m6!3m5!1s0x874d975686c1f0d9:0xbdfc25cc4bee2f51!8m2!3d40.229511!4d-111.662867!16s%2Fg%2F1td6ylgz!5m1!1e3?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="social-icon-header" aria-label="Visit our TikTok page">
-            <i class="fa-solid fa-location-dot"></i>
-            <span class="sr-only">TikTok</span>
-        </a>
-    </section> <br>
-    <p>Japanese Auto Repair © 2024</p>
-</footer>
+            cards.forEach(card => card.classList.remove('active'));
+            galleries.forEach(gallery => gallery.classList.remove('active'));
 
-<!-- JavaScript for Sidebar Toggle -->
-<script>
-    function showService(serviceId) {
-        const defaultGrid = document.getElementById('default-services');
-        const individualServices = document.getElementById('individual-services');
-        const cards = document.querySelectorAll('.japaneseAutoXtremeServiceZ_cardX');
-        const galleries = document.querySelectorAll('.japaneseAutoXtremeServiceZ_galleryZap');
-        const links = document.querySelectorAll('.japaneseAutoXtremeServiceZ_sidebarZ a');
+            links.forEach(link => link.classList.remove('active'));
+            const activeLink = document.querySelector(`.services-sidebar a[onclick="showService('${serviceId}')"]`);
+            if (activeLink) activeLink.classList.add('active');
 
-        // Hide all individual cards and galleries
-        cards.forEach(card => card.classList.remove('active'));
-        galleries.forEach(gallery => gallery.classList.remove('active'));
-
-        // Update sidebar active link
-        links.forEach(link => link.classList.remove('active'));
-        const activeLink = document.querySelector(`.japaneseAutoXtremeServiceZ_sidebarZ a[onclick="showService('${serviceId}')"]`);
-        if (activeLink) activeLink.classList.add('active');
-
-        if (serviceId === 'default') {
-            // Show default grid, hide individual services
-            defaultGrid.style.display = 'block';
-            individualServices.style.display = 'none';
-        } else {
-            // Hide default grid, show individual services
-            defaultGrid.style.display = 'none';
-            individualServices.style.display = 'flex';
-
-            // Show the selected card and its gallery (if any)
-            const selectedCard = document.getElementById(serviceId);
-            if (selectedCard) selectedCard.classList.add('active');
-
-            const selectedGallery = document.getElementById(`${serviceId}-gallery`);
-            if (selectedGallery) selectedGallery.classList.add('active');
+            if (serviceId === 'default') {
+                defaultGrid.style.display = 'grid';
+                individualServices.style.display = 'none';
+            } else {
+                defaultGrid.style.display = 'none';
+                individualServices.style.display = 'block';
+                const selectedCard = document.getElementById(serviceId);
+                if (selectedCard) selectedCard.classList.add('active');
+                const selectedGallery = document.getElementById(`${serviceId}-gallery`);
+                if (selectedGallery) selectedGallery.classList.add('active');
+            }
         }
-    }
 
-    // Show default grid on page load
-    window.onload = function() {
-        showService('default');
-    };
+        window.onload = function() {
+            showService('default');
+        };
 
-    // Image zoom functionality
-    document.addEventListener("DOMContentLoaded", function () {
-        const images = document.querySelectorAll(".japaneseAutoXtremeServiceZ_galleryGridZ img");
-        images.forEach(img => {
-            img.addEventListener("click", function () {
-                this.classList.toggle("zoomed");
-            });
-            img.addEventListener("mouseleave", function () {
-                this.classList.remove("zoomed");
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".gallery-grid img");
+            images.forEach(img => {
+                img.addEventListener("click", function () {
+                    this.classList.toggle("zoomed");
+                });
+                img.addEventListener("mouseleave", function () {
+                    this.classList.remove("zoomed");
+                });
             });
         });
-    });
-</script>
+    </script>
 </body>
 </html>
