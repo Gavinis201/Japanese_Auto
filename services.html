@@ -49,13 +49,14 @@
     <!-- Sidebar Menu -->
     <div class="japaneseAutoXtremeServiceZ_sidebarZ">
         <ul>
-            <li><a href="javascript:void(0);" onclick="showService('default')" class="active" style="font-size: 25px;">Main Services</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('diagnostic')"> Diagnostic Services</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('brake')"> Brake Repairs</a></li>
+            <span style="border: none;"><li><h3>Main Services</h3></li></span>
+            <li><a href="javascript:void(0);" onclick="showService('default')" class="active">Main Services</a></li>
+            <li><a href="javascript:void(0);" onclick="showService('diagnostic')">Diagnostic Services</a></li>
+            <li><a href="javascript:void(0);" onclick="showService('brake')">Brake Repairs</a></li>
             <li><a href="javascript:void(0);" onclick="showService('tuneup')">Auto Tune-Ups</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('renewal')"> On Spot Renewal</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('oil')"> Oil Change & Maintenance</a></li>
-            <li><a href="javascript:void(0);" onclick="showService('ac')"> AC Repair Service</a></li>
+            <li><a href="javascript:void(0);" onclick="showService('renewal')">On Spot Renewal</a></li>
+            <li><a href="javascript:void(0);" onclick="showService('oil')">Oil Change & Maintenance</a></li>
+            <li><a href="javascript:void(0);" onclick="showService('ac')">AC Repair Service</a></li>
             <li><a href="javascript:void(0);" onclick="showService('engine')">Engine Rebuild</a></li>
             <li><a href="javascript:void(0);" onclick="showService('fuel-air')">Fuel & Air Induction</a></li>
             <li><a href="javascript:void(0);" onclick="showService('transmission')">Transmission & Clutch</a></li>
@@ -68,7 +69,9 @@
     <div class="japaneseAutoXtremeServiceZ_contentZ">
         <!-- Default Grid (Visible on Load) -->
         <section class="services-section_services" id="default-services">
+       
             <div class="cards-container_service">
+                
                 <div class="service-card" aria-labelledby="diagnostic-title" aria-describedby="diagnostic-desc">
                     <img src="./assets/auto.jpg" alt="Mechanic inspecting a car engine for diagnostic services">
                     <h3 id="diagnostic-title">Diagnostic Services</h3>
@@ -104,6 +107,10 @@
 
         <!-- Individual Service Cards and Galleries (Hidden by Default) -->
         <div class="japaneseAutoXtremeServiceZ_detailZone" id="individual-services">
+            <div class="japaneseAutoXtremeServiceZ_cardX" id="individual-services">
+                <h3>Main Services</h3>
+                <p>With our expertise spanning two decades and the utilization of cutting-edge technology, we excel at vehicle diagnostics. Count on us to decipher those perplexing warning lights and provide precise assessments. Rest assured that our diagnostic services guarantee peace of mind for every driver, ensuring optimal performance for your vehicle.</p>
+            </div>
             <!-- Diagnostic Services -->
             <div class="japaneseAutoXtremeServiceZ_cardX" id="diagnostic">
                 <img src="./assets/auto.jpg" alt="Diagnostic Services">

@@ -1244,8 +1244,8 @@ textarea {
 
 .japaneseAutoXtremeServiceZ_sidebarZ li {
     margin-bottom: 15px;
-    border: 1px solid white;
-    border-radius: 15px;
+    /* border: 1px solid white; */
+    border-radius: 10px;
 }
 
 .japaneseAutoXtremeServiceZ_sidebarZ a {
@@ -1260,7 +1260,7 @@ textarea {
 
 .japaneseAutoXtremeServiceZ_sidebarZ a:hover,
 .japaneseAutoXtremeServiceZ_sidebarZ a.active {
-    background-color: var(--accent-gold);
+    background-color: var(--text-white);
     color: var(--main-blue);
 }
 
@@ -1275,7 +1275,6 @@ textarea {
     display: none; /* Hidden initially */
     flex-direction: column;
     gap: 20px;
-    padding: 100px;
 
 }
 
@@ -1364,3 +1363,274 @@ textarea {
 .services-section_services {
     text-align: center;
 }
+
+/* General Styles (from previous) */
+.contact-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .contact-hero {
+    background: linear-gradient(135deg, #003366 0%, #0055a5 100%);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .hero-content p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .contact-form-section {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .form-container {
+    flex: 2;
+    min-width: 300px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .form-header h2 {
+    font-size: 1.8rem;
+    color: #003366;
+  }
+  .form-header p {
+    color: #666;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #003366;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #003366;
+    outline: none;
+  }
+  .btn-submit {
+    background: #003366;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  .btn-submit:hover {
+    background: #0055a5;
+  }
+  .contact-info-side {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
+  .contact-info-side h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 15px;
+  }
+  .contact-info-side ul {
+    list-style: none;
+  }
+  .contact-info-side li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .contact-info-side i {
+    margin-right: 10px;
+    color: #003366;
+  }
+  .contact-info-side a {
+    color: #003366;
+    text-decoration: none;
+  }
+  .contact-info-side a:hover {
+    text-decoration: underline;
+  }
+  
+  /* New Sections */
+  .contact-map {
+    margin: 40px 0;
+    text-align: center;
+  }
+  .contact-map h2 {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  .contact-map p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  .contact-map iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-testimonials {
+    margin: 40px 0;
+  }
+  .contact-testimonials h2 {
+    font-size: 1.8rem;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .testimonial {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .testimonial p {
+    font-style: italic;
+    color: #666;
+  }
+  .testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #003366;
+  }
+  
+  .contact-cta {
+    background: #e6f0fa;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 40px 0;
+  }
+  .contact-cta h2 {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  .contact-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  .cta-button {
+    display: inline-block;
+    background: #003366;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  .cta-button:hover {
+    background: #0055a5;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .contact-hero {
+      padding: 30px 15px;
+    }
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    .contact-form-section {
+      flex-direction: column;
+    }
+    .form-container, .contact-info-side {
+      width: 100%;
+    }
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Existing Styles (unchanged from previous response) */
+/* ... (keep all previous CSS) ... */
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+  }
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+  }
+  .modal-close:hover {
+    color: #003366;
+  }
+  .modal-content h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 15px;
+  }
+  .modal-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  .modal-ok {
+    background: #003366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .modal-ok:hover {
+    background: #0055a5;
+  }

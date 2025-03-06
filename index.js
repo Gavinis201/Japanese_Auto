@@ -16,8 +16,32 @@ function sendMail(){
             document.getElementById('phone').value = '';
             document.getElementById('message').value = '';
             console.log(res);
-            alert('Your message has been successfully sent. \nWe will respond to you within 24 hours.');
+            var modal = document.getElementById("submissionModal");
+            modal.style.display = "flex";
     })
     .catch((err) => console.log(err));
 
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("submissionModal");
+    const closeButton = document.querySelector(".modal-close");
+    const okButton = document.querySelector(".modal-ok");
+  
+    // Function to close the modal
+    function closeModal() {
+      modal.style.display = "none";
+    }
+  
+    // Add event listeners
+    closeButton.addEventListener("click", closeModal);
+    okButton.addEventListener("click", closeModal);
+  
+    // Optional: Close modal when clicking outside the modal content
+    window.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+  });
+  
