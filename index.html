@@ -45,7 +45,7 @@
             <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
             <nav class="nav-list" aria-label="Main Navigation">
                 <ul>
-                    <li class="nav-gold"><a href="#home">Home</a></li>
+                    <li class="nav-gold"><a href="./index.html">Home</a></li>
                     <li class="nav-gold"><a href="./services.html">Services</a></li>
                     <li class="nav-gold"><a href="./contact.html">Contact</a></li>
                     <li class="nav-gold"><a href="./about.html">About</a></li>
@@ -53,9 +53,16 @@
             </nav>
             <button class="appointment-button">Get Quote</button>
             <div class="location-info">
-                <a href="https://www.facebook.com" target="_blank"><img src="./assets/facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="./assets/Instagram.webp" alt="Instagram"></a>
-                <a href="https://www.google.com/maps/place/Japanese+Auto+Repair/" target="_blank"><img src="./assets/google.webp" alt="Google Maps"></a>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon-header">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon-header">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.google.com/maps/place/Japanese+Auto+Repair/@40.229511,-111.6654419,1479m/data=!3m2!1e3!4b1!4m6!3m5!1s0x874d975686c1f0d9:0xbdfc25cc4bee2f51!8m2!3d40.229511!4d-111.662867!16s%2Fg%2F1td6ylgz!5m1!1e3?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="social-icon-header" aria-label="Visit our TikTok page">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="sr-only">TikTok</span>
+                </a>
             </div>
         </div>
     </header>
@@ -89,15 +96,29 @@
                         <img src="./assets/bmw.png" alt="Logo of BMW" class="carousel-image" role="listitem" loading="lazy">
                         <img src="./assets/cadilac.png" alt="Logo of Cadillac" class="carousel-image" role="listitem" loading="lazy">
                         <img src="./assets/Chevy.png" alt="Logo of Chevy" class="carousel-image" role="listitem" loading="lazy">
-                        <img src="./assets/ford.png" alt="Logo of Ford" class="carousel-image" role="listitem" loading="lazy">
-                        <img src="./assets/honda.png" alt="Logo of Honda" class="carousel-image" role="listitem" loading="lazy">
-                        <img src="./assets/hyndai.png" alt="Logo of Hyundai" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/ford Background Removed.png" alt="Logo of Ford" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/honda Background Removed.png" alt="Logo of Honda" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/hyndai Background Removed.png" alt="Logo of Hyundai" class="carousel-image" role="listitem" loading="lazy">
                         <img src="./assets/jeep.png" alt="Logo of Jeep" class="carousel-image" role="listitem" loading="lazy">
                         <img src="./assets/minicooper.png" alt="Logo of Mini Cooper" class="carousel-image" role="listitem" loading="lazy">
                         <img src="./assets/nissan.png" alt="Logo of Nissan" class="carousel-image" role="listitem" loading="lazy">
                         <img src="./assets/ram.png" alt="Logo of RAM" class="carousel-image" role="listitem" loading="lazy">
                         <img src="./assets/subaru.png" alt="Logo of Subaru" class="carousel-image" role="listitem" loading="lazy">
-                        <img src="./assets/toyota.png" alt="Logo of Toyota" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/toyota Background Removed.png" alt="Logo of Toyota" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/audi.png" alt="Logo of Audi" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/bmw.png" alt="Logo of BMW" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/cadilac.png" alt="Logo of Cadillac" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/Chevy.png" alt="Logo of Chevy" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/ford Background Removed.png" alt="Logo of Ford" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/honda Background Removed.png" alt="Logo of Honda" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/hyndai Background Removed.png" alt="Logo of Hyundai" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/jeep.png" alt="Logo of Jeep" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/minicooper.png" alt="Logo of Mini Cooper" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/nissan.png" alt="Logo of Nissan" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/ram.png" alt="Logo of RAM" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/subaru.png" alt="Logo of Subaru" class="carousel-image" role="listitem" loading="lazy">
+                        <img src="./assets/toyota Background Removed.png" alt="Logo of Toyota" class="carousel-image" role="listitem" loading="lazy">
+                        
                     </div>
                 </div>
                 <button class="carousel-btn next" onclick="scrollCarousel(1)" aria-label="Scroll right">▶</button>
@@ -220,33 +241,43 @@
             <h2>Expert Auto Repair Services</h2>
             <div class="services-grid">
                 <article class="service-card">
-                    <img src="./assets/auto.jpg" alt="Mechanic inspecting a car engine" loading="lazy">
+                    <img src="./assets/car-diagnostic-service.jpg" alt="Mechanic inspecting a car engine" loading="lazy">
                     <h3>Diagnostic Services</h3>
                     <p>Expert diagnostics with cutting-edge technology.</p>
                 </article>
                 <article class="service-card">
-                    <img src="./assets/auto.jpg" alt="Brake components being repaired" loading="lazy">
+                    <img src="./assets/transmission4.jpeg" alt="Brake components being repaired" loading="lazy">
                     <h3>Brake Repairs</h3>
                     <p>Comprehensive brake repair services.</p>
                 </article>
                 <article class="service-card">
-                    <img src="./assets/auto.jpg" alt="Mechanic performing a tune-up" loading="lazy">
+                    <img src="./assets/EnginRebuild8.jpg" alt="Mechanic performing a tune-up" loading="lazy">
                     <h3>Auto Tune-Ups</h3>
                     <p>Optimize your vehicle’s performance.</p>
                 </article>
                 <article class="service-card">
-                    <img src="./assets/auto.jpg" alt="Vehicle registration renewal" loading="lazy">
-                    <h3>On Spot Renewal</h3>
+                    <img src="./assets/licenseRenewal.png" alt="Vehicle registration renewal" loading="lazy">
+                    <h3>Car Registration Renewal</h3>
                     <p>Simplify your registration renewal.</p>
                 </article>
                 <article class="service-card">
-                    <img src="./assets/auto.jpg" alt="Oil change service" loading="lazy">
+                    <img src="./assets/OIlChange.jpg" alt="Oil change service" loading="lazy">
                     <h3>Oil Change & Maintenance</h3>
                     <p>Quick oil changes with top-grade oils.</p>
                 </article>
                 <article class="service-card">
-                    <img src="./assets/auto.jpg" alt="AC repair in progress" loading="lazy">
+                    <img src="./assets/ACRepairServcie.jpg" alt="AC repair in progress" loading="lazy">
                     <h3>AC Repair Service</h3>
+                    <p>Restore your car’s cooling system.</p>
+                </article>
+                <article class="service-card">
+                    <img src="./assets/Fuel&Air4.JPG" alt="AC repair in progress" loading="lazy">
+                    <h3>BG/Fuel & Air Induction Service</h3>
+                    <p>Restore your car’s cooling system.</p>
+                </article>
+                <article class="service-card">
+                    <img src="./assets/transmission5.jpeg" alt="AC repair in progress" loading="lazy">
+                    <h3>Transmission & Clutch Replacement</h3>
                     <p>Restore your car’s cooling system.</p>
                 </article>
             </div>
@@ -290,130 +321,186 @@
     </section>
     <footer>
         <section class="social-media">
-            <div class="location-info">
-                <a href="https://www.facebook.com" target="_blank"><img src="./assets/facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="./assets/Instagram.webp" alt="Instagram"></a>
-                <a href="https://www.google.com/maps/place/Japanese+Auto+Repair/" target="_blank"><img src="./assets/google.webp" alt="Google Maps"></a>
-            </div>
-        </section>
-        <br>
+            <a href="https://www.facebook.com" target="_blank" class="social-icon-footer">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon-footer">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.google.com/maps/place/Japanese+Auto+Repair/@40.229511,-111.6654419,1479m/data=!3m2!1e3!4b1!4m6!3m5!1s0x874d975686c1f0d9:0xbdfc25cc4bee2f51!8m2!3d40.229511!4d-111.662867!16s%2Fg%2F1td6ylgz!5m1!1e3?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="social-icon-footer" aria-label="Visit our TikTok page">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="sr-only">TikTok</span>
+            </a>
+        </section> <br>
         <p>Japanese Auto Repair © 2024</p>
     </footer>
     <!-- JavaScript (Unchanged) -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const menuToggle = document.querySelector(".menu-toggle");
-            const navList = document.querySelector(".nav-list");
-            menuToggle.addEventListener("click", function() {
-                navList.classList.toggle("active");
-            });
-        });
-        const carouselContent = document.querySelector('.carousel-content');
-        const carouselWrapper = document.querySelector('.carousel-wrapper');
-        const images = document.querySelectorAll('.carousel-image');
-        let scrollIndex = 0;
-        const imagesPerView = 6;
-        let imageWidth;
-        let autoScroll;
-        function calculateImageWidth() {
-            const firstImage = images[0];
-            const computedStyle = window.getComputedStyle(firstImage);
-            const marginLeft = parseFloat(computedStyle.marginLeft);
-            const marginRight = parseFloat(computedStyle.marginRight);
-            imageWidth = firstImage.offsetWidth + marginLeft + marginRight;
+      document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navList = document.querySelector(".nav-list");
+
+    menuToggle.addEventListener("click", function () {
+        navList.classList.toggle("active");
+    });
+});
+
+// 🎠 **First Carousel (Images)**
+const carouselContent = document.querySelector('.carousel-content');
+const carouselWrapper = document.querySelector('.carousel-wrapper');
+let images = Array.from(document.querySelectorAll('.carousel-image'));
+let scrollIndex = 0;
+const imagesPerView = 6;
+let imageWidth;
+let autoScroll;
+
+function calculateImageWidth() {
+    const firstImage = images[0];
+    const computedStyle = window.getComputedStyle(firstImage);
+    const marginLeft = parseFloat(computedStyle.marginLeft) || 0;
+    const marginRight = parseFloat(computedStyle.marginRight) || 0;
+    imageWidth = firstImage.offsetWidth + marginLeft + marginRight;
+}
+
+function setupCarousel() {
+    calculateImageWidth();
+    const totalImages = images.length;
+
+    // Clone all images once to create a seamless loop
+    images.forEach(img => {
+        const clone = img.cloneNode(true);
+        carouselContent.appendChild(clone);
+    });
+
+    images = document.querySelectorAll('.carousel-image'); // Update image list
+}
+
+function scrollCarousel() {
+    scrollIndex++;
+    carouselContent.style.transition = 'transform 0.5s linear';
+    carouselContent.style.transform = `translateX(-${scrollIndex * imageWidth}px)`;
+
+    carouselContent.addEventListener('transitionend', () => {
+        if (scrollIndex >= images.length / 2) {
+            scrollIndex = 0;
+            carouselContent.style.transition = 'none';
+            carouselContent.style.transform = `translateX(0px)`;
         }
-        function setupCarousel() {
-            calculateImageWidth();
-            const totalImages = images.length;
-            for (let i = 0; i < imagesPerView; i++) {
-                const clone = images[i].cloneNode(true);
-                carouselContent.appendChild(clone);
-            }
-            for (let i = totalImages - imagesPerView; i < totalImages; i++) {
-                const clone = images[i].cloneNode(true);
-                carouselContent.prepend(clone);
-            }
-            scrollIndex = imagesPerView;
-            carouselContent.style.transform = `translateX(-${scrollIndex * imageWidth}px)`;
+    }, { once: true });
+}
+
+function startAutoScroll() {
+    autoScroll = setInterval(scrollCarousel, 3000);
+}
+
+function setupHoverPause() {
+    carouselWrapper.addEventListener('mouseenter', () => clearInterval(autoScroll));
+    carouselWrapper.addEventListener('mouseleave', startAutoScroll);
+}
+
+window.addEventListener('load', () => {
+    setupCarousel();
+    startAutoScroll();
+    setupHoverPause();
+});
+
+// 🎠 **Second Carousel (Reviews)**
+const reviewsContent = document.querySelector('.reviews-content');
+const reviewsWrapper = document.querySelector('.reviews-wrapper');
+let reviewCards = Array.from(document.querySelectorAll('.review-card'));
+let reviewIndex = 0;
+const reviewsPerView = 3;
+const reviewCardWidth = 340;
+let reviewAutoScroll;
+
+function setupReviewCarousel() {
+    reviewCards.forEach(card => {
+        const clone = card.cloneNode(true);
+        reviewsContent.appendChild(clone);
+    });
+
+    reviewCards = document.querySelectorAll('.review-card');
+}
+
+function scrollReviews() {
+    reviewIndex++;
+    reviewsContent.style.transition = 'transform 0.5s linear';
+    reviewsContent.style.transform = `translateX(-${reviewIndex * reviewCardWidth}px)`;
+
+    reviewsContent.addEventListener('transitionend', () => {
+        if (reviewIndex >= reviewCards.length / 2) {
+            reviewIndex = 0;
+            reviewsContent.style.transition = 'none';
+            reviewsContent.style.transform = `translateX(0px)`;
         }
-        function scrollCarousel(direction = 1) {
-            const totalImages = carouselContent.children.length;
-            scrollIndex += direction;
-            carouselContent.style.transition = 'transform 0.5s ease-in-out';
-            carouselContent.style.transform = `translateX(-${scrollIndex * imageWidth}px)`;
-            carouselContent.addEventListener('transitionend', () => {
-                if (scrollIndex <= 0) {
-                    scrollIndex = totalImages - 2 * imagesPerView;
-                    carouselContent.style.transition = 'none';
-                    carouselContent.style.transform = `translateX(-${scrollIndex * imageWidth}px)`;
-                } else if (scrollIndex >= totalImages - imagesPerView) {
-                    scrollIndex = imagesPerView;
-                    carouselContent.style.transition = 'none';
-                    carouselContent.style.transform = `translateX(-${scrollIndex * imageWidth}px)`;
-                }
-            }, { once: true });
+    }, { once: true });
+}
+
+function startReviewAutoScroll() {
+    reviewAutoScroll = setInterval(scrollReviews, 5000);
+}
+
+function setupReviewHoverPause() {
+    reviewsWrapper.addEventListener('mouseenter', () => clearInterval(reviewAutoScroll));
+    reviewsWrapper.addEventListener('mouseleave', startReviewAutoScroll);
+}
+
+window.addEventListener('load', () => {
+    setupReviewCarousel();
+    startReviewAutoScroll();
+    setupReviewHoverPause();
+});
+
+
+
+const japaneseAutoReviewsContent = document.querySelector('.reviews-content');
+const japaneseAutoReviewsWrapper = document.querySelector('.reviews-wrapper');
+let japaneseAutoReviewsCards = Array.from(document.querySelectorAll('.review-card'));
+let japaneseAutoReviewsIndex = 0;
+const japaneseAutoReviewsCardsPerView = 3;
+const japaneseAutoReviewsCardWidth = 340;
+let japaneseAutoReviewsAutoScroll;
+
+function japaneseAutoReviewsSetup() {
+    // Clone all review cards once to create a seamless loop
+    japaneseAutoReviewsCards.forEach(card => {
+        const clone = card.cloneNode(true);
+        japaneseAutoReviewsContent.appendChild(clone);
+    });
+
+    // Update review cards list
+    japaneseAutoReviewsCards = document.querySelectorAll('.review-card');
+}
+
+function japaneseAutoReviewsScroll() {
+    japaneseAutoReviewsIndex++;
+    japaneseAutoReviewsContent.style.transition = 'transform 0.5s linear';
+    japaneseAutoReviewsContent.style.transform = `translateX(-${japaneseAutoReviewsIndex * japaneseAutoReviewsCardWidth}px)`;
+
+    japaneseAutoReviewsContent.addEventListener('transitionend', () => {
+        if (japaneseAutoReviewsIndex >= japaneseAutoReviewsCards.length / 2) {
+            japaneseAutoReviewsIndex = 0;
+            japaneseAutoReviewsContent.style.transition = 'none';
+            japaneseAutoReviewsContent.style.transform = `translateX(0px)`;
         }
-        function startAutoScroll() {
-            autoScroll = setInterval(() => scrollCarousel(1), 5000);
-        }
-        function setupHoverPause() {
-            carouselWrapper.addEventListener('mouseenter', () => clearInterval(autoScroll));
-            carouselWrapper.addEventListener('mouseleave', startAutoScroll);
-        }
-        window.addEventListener('load', () => {
-            setupCarousel();
-            startAutoScroll();
-            setupHoverPause();
-        });
-        const japaneseAutoReviewsContent = document.querySelector('.reviews-content');
-        const japaneseAutoReviewsWrapper = document.querySelector('.reviews-wrapper');
-        const japaneseAutoReviewsCards = document.querySelectorAll('.review-card');
-        let japaneseAutoReviewsIndex = 0;
-        const japaneseAutoReviewsCardsPerView = 3;
-        const japaneseAutoReviewsCardWidth = 340;
-        let japaneseAutoReviewsAutoScroll;
-        function japaneseAutoReviewsSetup() {
-            const japaneseAutoReviewsTotalCards = japaneseAutoReviewsCards.length;
-            for (let i = 0; i < japaneseAutoReviewsCardsPerView; i++) {
-                const clone = japaneseAutoReviewsCards[i].cloneNode(true);
-                japaneseAutoReviewsContent.appendChild(clone);
-            }
-            for (let i = japaneseAutoReviewsTotalCards - japaneseAutoReviewsCardsPerView; i < japaneseAutoReviewsTotalCards; i++) {
-                const clone = japaneseAutoReviewsCards[i].cloneNode(true);
-                japaneseAutoReviewsContent.prepend(clone);
-            }
-            japaneseAutoReviewsIndex = japaneseAutoReviewsCardsPerView;
-            japaneseAutoReviewsContent.style.transform = `translateX(-${japaneseAutoReviewsIndex * japaneseAutoReviewsCardWidth}px)`;
-        }
-        function japaneseAutoReviewsScroll(direction = 1) {
-            const japaneseAutoReviewsTotalCards = japaneseAutoReviewsContent.children.length;
-            japaneseAutoReviewsIndex += direction;
-            japaneseAutoReviewsContent.style.transition = 'transform 0.5s ease-in-out';
-            japaneseAutoReviewsContent.style.transform = `translateX(-${japaneseAutoReviewsIndex * japaneseAutoReviewsCardWidth}px)`;
-            japaneseAutoReviewsContent.addEventListener('transitionend', () => {
-                if (japaneseAutoReviewsIndex <= 0) {
-                    japaneseAutoReviewsIndex = japaneseAutoReviewsTotalCards - japaneseAutoReviewsCardsPerView * 2;
-                    japaneseAutoReviewsContent.style.transition = 'none';
-                    japaneseAutoReviewsContent.style.transform = `translateX(-${japaneseAutoReviewsIndex * japaneseAutoReviewsCardWidth}px)`;
-                } else if (japaneseAutoReviewsIndex >= japaneseAutoReviewsTotalCards - japaneseAutoReviewsCardsPerView) {
-                    japaneseAutoReviewsIndex = japaneseAutoReviewsCardsPerView;
-                    japaneseAutoReviewsContent.style.transition = 'none';
-                    japaneseAutoReviewsContent.style.transform = `translateX(-${japaneseAutoReviewsIndex * japaneseAutoReviewsCardWidth}px)`;
-                }
-            }, { once: true });
-        }
-        function japaneseAutoReviewsStartAutoScroll() {
-            japaneseAutoReviewsAutoScroll = setInterval(() => japaneseAutoReviewsScroll(1), 7000);
-        }
-        function japaneseAutoReviewsSetupHoverPause() {
-            japaneseAutoReviewsWrapper.addEventListener('mouseenter', () => clearInterval(japaneseAutoReviewsAutoScroll));
-            japaneseAutoReviewsWrapper.addEventListener('mouseleave', japaneseAutoReviewsStartAutoScroll);
-        }
-        window.addEventListener('load', () => {
-            japaneseAutoReviewsSetup();
-            japaneseAutoReviewsStartAutoScroll();
-            japaneseAutoReviewsSetupHoverPause();
-        });
+    }, { once: true });
+}
+
+function japaneseAutoReviewsStartAutoScroll() {
+    japaneseAutoReviewsAutoScroll = setInterval(japaneseAutoReviewsScroll, 5000);
+}
+
+function japaneseAutoReviewsSetupHoverPause() {
+    japaneseAutoReviewsWrapper.addEventListener('mouseenter', () => clearInterval(japaneseAutoReviewsAutoScroll));
+    japaneseAutoReviewsWrapper.addEventListener('mouseleave', japaneseAutoReviewsStartAutoScroll);
+}
+
+window.addEventListener('load', () => {
+    japaneseAutoReviewsSetup();
+    japaneseAutoReviewsStartAutoScroll();
+    japaneseAutoReviewsSetupHoverPause();
+});
+
     </script>
 </body>
 </html>

@@ -149,70 +149,43 @@ header {
     
     
 }
-
 .carousel-container {
-    position: relative;
-    width: calc((180px + 20px) * 6); /* Image width + margin * visible images */
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex; /* Add flex to center the wrapper */
+  justify-content: center; /* Center the carousel content */
 }
 
-/* Carousel Wrapper */
-.carousel-wrapper {
-    width: 100%;
-    overflow: hidden;
-}
-
-/* Carousel Content */
-.carousel-content {
-    display: flex;
-    transition: transform 0.5s ease; /* Smooth scrolling effect */
-}
-
-/* Carousel Image */
-.carousel-image {
-    width: 140px; /* Image width */
-    height: 120px;
-    object-fit: contain;
-    margin: 0 10px; /* Reduced margin for more precise calculations */
-    aspect-ratio: 8/5;
-    border-radius: 10px;
-    box-sizing: border-box; /* Ensures padding or borders don’t affect width */
-}
-
-
-/* Carousel Buttons */
 .carousel-btn {
-    top: 50%;
-    transform: translateY(-50%) infinite;
-    background-color: var(--main-blue); /* Semi-transparent background */
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 2;
-    margin: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 10px;
+  z-index: 10;
 }
 
 .carousel-btn.prev {
-    left: 10px;
+  left: -50px; /* Move it outside the container to the left */
 }
 
 .carousel-btn.next {
-    right: 10px;
+  right: -50px; /* Move it outside the container to the right */
 }
 
 .carousel-btn:hover {
-    background-color: #003366c4;
+  background-color: #00336681;
 }
 
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
 
 .location-info {
     display: flex;
@@ -597,27 +570,6 @@ textarea {
     resize: vertical;
 }
 
-.btn-submit {
-    background-color: #FFD700; /* Accent gold */
-    color: #003366; /* Main blue */
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    margin-top: 15px;
-
-}
-
-.btn-submit:hover {
-    background-color: #003366; /* Main blue */
-    color: #FFD700; /* Accent gold */
-    transition: background-color 0.3s ease;
-    outline: 1px solid var(--accent-gold);
-}
-
 @media (max-width: 768px) {
     .nav-list {
         display: none; /* Hide menu by default on mobile */
@@ -843,7 +795,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--accent-gold);
+    background-color: white;
     border: 1px solid var(--main-blue);
     height: 40px;
     width: 40px;
@@ -854,12 +806,33 @@ textarea {
   }
   
   .social-icon-header:hover {
-    color:var(--accent-gold);
+    color:white;
     background-color: var(--main-blue);
-    border: 1px solid var(--accent-gold);
+    border: 1px solid white;
     transition: background-color 0.3s ease;
   }
   
+  .social-icon-footer {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid var(--main-blue);
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    color: var(--main-blue);
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .social-icon-footer:hover {
+    color:white;
+    background-color: var(--main-blue);
+    border: 1px solid white;
+    transition: background-color 0.3s ease;
+  }
   .social-icon-header img {
     height: 50px; /* Make all icons the same size */
     width: auto;
@@ -1373,7 +1346,7 @@ textarea {
 .contact-page {
     /* max-width: 1200px; */
     /* margin: 0 auto; */
-    padding: 20px;
+    padding: 30px;
   }
   .contact-hero {
      background: linear-gradient(to bottom, #034383 0%, #003366 100%);
@@ -1443,9 +1416,11 @@ textarea {
     border-radius: 5px;
     font-size: 1.1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   .btn-submit:hover {
     background: #0055a5;
+    transition: background-color 0.3s ease;
   }
   .contact-info-side {
     flex: 1;
@@ -1666,7 +1641,7 @@ body {
   .about-page {
     /* max-width: 1200px; */
     /* margin: 0 auto; */
-    padding: 20px;
+    padding: 30px;
   }
   
   /* Hero Section */
@@ -1701,6 +1676,7 @@ body {
   .story-text {
     flex: 1;
     min-width: 300px;
+    padding: 2em;
   }
   .story-text h2 {
     font-size: 1.8rem;
@@ -1715,10 +1691,11 @@ body {
     min-width: 300px;
   }
   .story-image img {
-    width: 100%;
+    width: 95%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
   }
   
   /* Our Team Section */
@@ -1817,16 +1794,8 @@ body {
     font-size: 1.1rem;
     margin-bottom: 20px;
   }
-  .cta-button {
-    display: inline-block;
-    background: #003366;
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: background 0.3s;
-  }
+ 
+
   .cta-button:hover {
     background: #0055a5;
   }
@@ -1859,7 +1828,7 @@ body {
 .services-page {
     /* max-width: 1200px; */
     /* margin: 0 auto; */
-    padding: 20px;
+    padding: 30px;
 }
 
 /* Hero Section */
@@ -2101,13 +2070,19 @@ body {
     overflow: hidden;
 }
 .carousel-content {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out; /* Updated to match transition property */
 }
 .carousel-image {
-    height: 100px;
-    margin: 0 20px;
-    object-fit: contain;
+  width: 140px; /* Fixed width */
+  height: 120px;
+  object-fit: contain;
+  margin: 0 10px; /* Consistent margins */
+  aspect-ratio: 8/5;
+  border-radius: 10px;
+  box-sizing: border-box;
+  flex-shrink: 0; /* Prevent shrinking */
 }
 
 /* Stats Section */
@@ -2176,6 +2151,10 @@ body {
     padding: 10px;
     cursor: pointer;
     z-index: 10;
+}
+.reviews-btn:hover {
+  background-color: #00336681;
+
 }
 .reviews-btn.prev {
     left: 0;
@@ -2370,8 +2349,9 @@ body {
 
 /* Main Content */
 .home-page {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
+  padding: 30px;
 }
 
 /* Hero Section */
@@ -2428,40 +2408,52 @@ body {
 }
 .carousel-container {
   position: relative;
-  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-content {
+  display: flex;
+  gap: 20px;
+  will-change: transform;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+  width: 150px;
+  height: auto;
+  flex-shrink: 0;
+}
+
 .carousel-btn {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #003366;
-  color: #fff;
+  background-color: 003366;
+  color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
   z-index: 10;
-  font-size: 1rem;
+  border-radius: 50%;
 }
-.carousel-btn.prev {
-  left: 0;
+
+.prev {
+  left: 10px;
 }
-.carousel-btn.next {
-  right: 0;
+
+.next {
+  right: 10px;
 }
-.carousel-wrapper {
-  overflow: hidden;
-}
-.carousel-content {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-.carousel-image {
-  height: 100px;
-  margin: 0 20px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
+
 
 /* Stats Section */
 .stats-section {
@@ -2521,7 +2513,10 @@ body {
   position: relative;
   max-width: 100%;
   overflow: hidden;
+  display: flex; /* Add this to allow proper alignment */
+  justify-content: center; /* Center the wrapper */
 }
+
 .reviews-btn {
   position: absolute;
   top: 50%;
@@ -2533,15 +2528,20 @@ body {
   cursor: pointer;
   z-index: 10;
   font-size: 1rem;
+  border-radius: 50%;
 }
+
 .reviews-btn.prev {
-  left: 0;
+  left: 10px; /* Move it outside the container to the left */
 }
+
 .reviews-btn.next {
-  right: 0;
+  right: 10px; /* Move it outside the container to the right */
 }
+
 .reviews-wrapper {
   overflow: hidden;
+  width: 100%; /* Ensure it takes up the full container width */
 }
 .reviews-content {
   display: flex;
@@ -2789,4 +2789,3 @@ footer {
       padding: 30px 10px;
   }
 }
-
