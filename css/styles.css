@@ -2542,7 +2542,7 @@ body {
 
 .reviews-wrapper {
   overflow: hidden;
-  width: 100%; /* Ensure it takes up the full container width */
+  width: 98%; /* Ensure it takes up the full container width */
 }
 .reviews-content {
   display: flex;
