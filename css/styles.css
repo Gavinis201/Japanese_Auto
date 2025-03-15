@@ -726,15 +726,16 @@ textarea {
     gap: 50px;
     max-width: 400px; /* Limit the width of each column */
     text-align: left; /* Keep the text left-aligned */
-    padding-top: 20px;
     align-items: center;
+    
 }
 
+
   .margin {
-    margin-left: 30px;
+    margin-left: 40px;
   }
   .margin p {
-    margin-left: 30px;
+    margin-left: 40px;
   }
   
   .widthp {
