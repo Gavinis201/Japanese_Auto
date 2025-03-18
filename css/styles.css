@@ -120,9 +120,7 @@ header {
   }
 
   /* Adjust social icons */
-  .location-info {
-      margin-top: 15px;
-  }
+ 
 
   .social-icon-header i {
       font-size: 1.5rem; /* Larger icons for mobile */
@@ -634,7 +632,7 @@ textarea {
 }
 
 .header-mobile{
-
+gap: 10px;
 }
 
 @media (max-width: 768px) {
@@ -2378,8 +2376,9 @@ body {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  width: 40px;
 }
 .nav-list ul {
   list-style: none;
@@ -2409,10 +2408,7 @@ body {
 .appointment-button:hover {
   background: #0055a5;
 }
-.location-info {
-  display: flex;
-  gap: 10px;
-}
+
 .location-info img {
   width: 24px;
   height: 24px;
@@ -2770,9 +2766,8 @@ footer {
   .appointment-button {
       margin: 10px 0;
   }
-  .location-info {
-      justify-content: center;
-  }
+  
+
   .home-hero {
       padding: 40px 15px;
   }
