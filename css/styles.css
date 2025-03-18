@@ -27,16 +27,7 @@ html, body {
     letter-spacing: 1px;
 }
 
-.top {
-    color: white;
-    top: 0;
-    height: 2.5em;
-    z-index: 10;  /* Ensure it stays above other content */
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: .75px;
-}
+
 .innerleft{
     position: relative;
     display: flex;
@@ -73,10 +64,77 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* HEADER RESPONSIVE */
+/* Mobile styles */
+@media (max-width: 768px) {
+  /* Stack .top section */
+  .top {
+      display: none;
+  }
 
-/* Banner Wrapper (Sticky and below header) */
-/* Banner Wrapper */
-/* Banner Wrapper */
+  /* Make .innerleft and .innerright stack */
+  .innerleft, .innerright {
+     display: none;
+  }
+
+  /* Adjust logo size on small screens */
+  .JapaneseAutoLogo {
+      font-size: 1.8em; /* Smaller logo on mobile */
+      padding: 10px;
+  }
+
+  /* Stack header content on mobile */
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 20px;
+  }
+
+  /* Make nav items stack vertically */
+  .nav-list {
+      display: none;  /* Hide nav list by default */
+      flex-direction: column;
+      width: 100%;
+  }
+
+  /* Show nav items when toggled */
+  .nav-list.active {
+      display: flex;
+  }
+
+  /* Show menu toggle button */
+  
+
+  /* Adjust padding on nav links */
+  .nav-gold a {
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+  }
+
+  /* Adjust button styles */
+  .appointment-button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 12px;
+  }
+
+  /* Adjust social icons */
+  .location-info {
+      margin-top: 15px;
+  }
+
+  .social-icon-header i {
+      font-size: 1.5rem; /* Larger icons for mobile */
+  }
+}
+
+/* Show menu on toggle */
+.menu-toggle:checked + .nav-list {
+  display: flex;
+}
+
+
 /* Banner Wrapper */
 .banner-wrapper {
     position: sticky; /* Keeps the banner at the top */
@@ -202,7 +260,6 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 6em;
     position: relative;
     padding: 0 20px;
 }
@@ -576,6 +633,10 @@ textarea {
     resize: vertical;
 }
 
+.header-mobile{
+
+}
+
 @media (max-width: 768px) {
     .nav-list {
         display: none; /* Hide menu by default on mobile */
@@ -589,7 +650,9 @@ textarea {
     }
     .nav-container{
         flex-direction: row;
-        gap: 2em;
+    }
+    .header-mobile{
+    display: flex;
     }
     .hero{
         height: 30em;
@@ -621,14 +684,7 @@ textarea {
     }
 
     /* Hamburger menu button */
-    .menu-toggle {
-        display: block;
-        font-size: 40px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: #333;
-    }
+  
 }
 
 /* Hide the menu toggle button on larger screens */
@@ -1356,7 +1412,8 @@ textarea {
     padding: 30px;
   }
   .contact-hero {
-     background: linear-gradient(to bottom, #034383 0%, #003366 100%);
+    background: linear-gradient(0deg, #003366 0%, #0055a5 100%);
+
     color: #fff;
     padding: 40px 20px;
     text-align: center;
@@ -1496,6 +1553,9 @@ textarea {
     gap: 20px;
   }
   .testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -1511,6 +1571,7 @@ textarea {
     margin-top: 10px;
     font-weight: bold;
     color: #003366;
+    
   }
   
   .contact-cta {
@@ -1653,7 +1714,8 @@ body {
   
   /* Hero Section */
   .about-hero {
-    background: linear-gradient(135deg, #003366 0%, #0055a5 100%);
+    background: linear-gradient(0deg, #003366 0%, #0055a5 100%);
+
     color: #fff;
     padding: 40px 20px;
     text-align: center;
@@ -1678,12 +1740,12 @@ body {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
   }
   .story-text {
     flex: 1;
     min-width: 300px;
-    padding: 2em;
+    padding: 3em;
   }
   .story-text h2 {
     font-size: 1.8rem;
@@ -1733,7 +1795,7 @@ body {
   }
   .team-member img {
     width: 100%;
-    max-width: 150px;
+    max-width: 200px;
     height: auto;
     border-radius: 50%;
     margin-bottom: 15px;
@@ -1840,7 +1902,8 @@ body {
 
 /* Hero Section */
 .services-hero {
-    background: linear-gradient(135deg, #003366 0%, #0055a5 100%);
+  background: linear-gradient(0deg, #003366 0%, #0055a5 100%);
+
     color: #fff;
     padding: 40px 20px;
     text-align: center;
@@ -2173,13 +2236,16 @@ body {
     transition: transform 0.5s ease-in-out;
 }
 .review-card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 0 20px;
-    width: 300px;
-    flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 20px;
+  width: 300px;
+  flex-shrink: 0;
 }
 .stars i {
     color: #f1c40f;
@@ -2312,6 +2378,8 @@ body {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 .nav-list ul {
   list-style: none;
@@ -2662,10 +2730,12 @@ footer {
   height: 24px;
 }
 
-/* Responsive Design */
+/* mobile phone header */
 @media (max-width: 1024px) {
   .nav-container {
-      flex-wrap: wrap;
+      /* flex-wrap: wrap; */
+      flex-direction: column;
+    
   }
   .carousel-image {
       height: 80px;
@@ -2680,11 +2750,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .top {
-      flex-direction: column;
-      text-align: center;
-      gap: 10px;
-  }
+  
   .menu-toggle {
       display: block;
   }
