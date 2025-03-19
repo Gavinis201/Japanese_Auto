@@ -17,16 +17,22 @@ html, body {
     --text-white: #f9f7f7;
 }
 
-.JapaneseAutoLogo{
-    text-decoration: none;
-    font-size: 2.2em;
-    color: var(--main-blue);
-    padding: 20px ;
-    border-radius: 80%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 1px;
+.JapaneseAutoLogo {
+  font-size: 1.65rem;
+  font-weight: bold;
+  color: #003366;
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1px;
 }
-
+.top {
+  background: #003366;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .innerleft{
     position: relative;
@@ -64,74 +70,19 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.center-social{
+  display: none;
+}
 /* HEADER RESPONSIVE */
 /* Mobile styles */
-@media (max-width: 768px) {
-  /* Stack .top section */
-  .top {
-      display: none;
-  }
-
-  /* Make .innerleft and .innerright stack */
-  .innerleft, .innerright {
-     display: none;
-  }
-
-  /* Adjust logo size on small screens */
-  .JapaneseAutoLogo {
-      font-size: 1.8em; /* Smaller logo on mobile */
-      padding: 10px;
-  }
-
-  /* Stack header content on mobile */
-  header {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 15px 20px;
-  }
-
-  /* Make nav items stack vertically */
-  .nav-list {
-      display: none;  /* Hide nav list by default */
-      flex-direction: column;
-      width: 100%;
-  }
-
-  /* Show nav items when toggled */
-  .nav-list.active {
-      display: flex;
-  }
-
-  /* Show menu toggle button */
-  
-
-  /* Adjust padding on nav links */
-  .nav-gold a {
-      padding: 10px;
-      width: 100%;
-      text-align: left;
-  }
-
-  /* Adjust button styles */
-  .appointment-button {
-      width: 100%;
-      margin-top: 10px;
-      padding: 12px;
-  }
-
-  /* Adjust social icons */
- 
-
-  .social-icon-header i {
-      font-size: 1.5rem; /* Larger icons for mobile */
-  }
-}
 
 /* Show menu on toggle */
 .menu-toggle:checked + .nav-list {
   display: flex;
 }
-
+.nav-gold-reviews{
+  display: none;
+}
 
 /* Banner Wrapper */
 .banner-wrapper {
@@ -298,13 +249,17 @@ header {
     font-weight: 600;
     font-size: 22px;
     transition: color 0.3s ease; /* Smooth transition for hover effect */
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .nav-list ul li a:hover {
     color: #0033669b;
     transition: background-color 0.3s ease
 }
-
+.address-mobile{
+  display: none;
+}
 
 .appointment-button {
     background-color: var(--main-blue); /* Gold button background */
@@ -342,7 +297,8 @@ header {
     color: var(--text-white);
     position: relative;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
+    background-image: url('../assets/JapaneseAutoFrontPage.jpg'); 
 }
 .hero::before {
     content: '';
@@ -516,24 +472,15 @@ border-radius: 10px;
 
 
 .hero h1 {
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 10px;
     line-height: 1.2;
     font-weight: bold;
 }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
 
-.cta-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
+
 
 .cta-buttons a {
     background-color: var(--accent-gold);
@@ -635,106 +582,6 @@ textarea {
 gap: 10px;
 }
 
-@media (max-width: 768px) {
-    .nav-list {
-        display: none; /* Hide menu by default on mobile */
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
-    .nav-container{
-        flex-direction: row;
-    }
-    .header-mobile{
-    display: flex;
-    }
-    .hero{
-        height: 30em;
-    }
-    
-    .location-info{
-    display: none;
-    }
-    .nav-list ul {
-        flex-direction: column;
-        padding: 10px 0;
-    }
-
-    .nav-list li {
-        margin: 10px 0;
-    }
-
-    .nav-list a {
-        display: block;
-        padding: 12px;
-        color: #333;
-        font-size: 18px;
-        text-decoration: none;
-    }
-
-    /* Show menu when active */
-    .nav-list.active {
-        display: block;
-    }
-
-    /* Hamburger menu button */
-  
-}
-
-/* Hide the menu toggle button on larger screens */
-@media (min-width: 769px) {
-    .menu-toggle {
-        display: none;
-    }
-}
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .cta-buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .cta-buttons a {
-        width: 100%;
-        padding: 12px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 14px;
-    }
-
-    .appointment-button {
-        width: 100%;
-        padding: 15px 0;
-    }
-
-    .footer-container p {
-        font-size: 12px;
-    }
-}
 /* Ensure the html and body take up the full height */
 
 
@@ -754,10 +601,6 @@ gap: 10px;
 
 
 
-.nav-list a {
-    color: white;
-    text-decoration: none;
-}
 
 /* Sticky footer */
 
@@ -1418,11 +1261,9 @@ gap: 10px;
     border-radius: 8px;
     margin-bottom: 40px;
   }
-  .hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
+
   .hero-content p {
+    text-align: center;
     font-size: 1.1rem;
     max-width: 600px;
     margin: 0 auto;
@@ -1622,9 +1463,6 @@ gap: 10px;
     .contact-hero {
       padding: 30px 15px;
     }
-    .hero-content h1 {
-      font-size: 2rem;
-    }
     .contact-form-section {
       flex-direction: column;
     }
@@ -1721,14 +1559,9 @@ body {
     margin-bottom: 40px;
   }
   .hero-content h1 {
-    font-size: 2.5rem;
     margin-bottom: 10px;
   }
-  .hero-content p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
-  }
+  
   
   /* Our Story Section */
   .about-story {
@@ -1866,6 +1699,9 @@ body {
   .cta-button:hover {
     background: #0055a5;
   }
+  .social-header{
+    display: none;
+  }
   
   /* Responsive Design */
   @media (max-width: 768px) {
@@ -1873,13 +1709,34 @@ body {
       padding: 30px 15px;
     }
     .hero-content h1 {
-      font-size: 2rem;
+      display: flex;
+      justify-content: center;
     }
     .story-container {
       flex-direction: column;
     }
     .team-grid, .values-grid {
       grid-template-columns: 1fr;
+    }
+    .social-header{
+      display: flex;
+      gap: 10px;
+      font-size: 5px;
+    }
+    .social-header a{
+      font-size: 20px;
+      height: 30px;
+      width: 30px;
+      padding: 5px;
+    }
+    .center{
+      padding: 0px;
+      border-radius: 0px;
+    }
+    .hero{
+      border-radius: 0px;
+      background-position: left;
+      height: 500px;
     }
   }
 
@@ -1907,15 +1764,6 @@ body {
     text-align: center;
     border-radius: 8px;
     margin-bottom: 40px;
-}
-.hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-.hero-content p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 /* Services Container */
@@ -2075,21 +1923,6 @@ body {
     background: #0055a5;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .services-hero {
-        padding: 30px 15px;
-    }
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    .services-container {
-        flex-direction: column;
-    }
-    .services-sidebar, .services-content {
-        width: 100%;
-    }
-}
 
 
 
@@ -2205,17 +2038,7 @@ body {
     max-width: 100%;
     overflow: hidden;
 }
-.reviews-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #003366;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-}
+
 .reviews-btn:hover {
   background-color: #00336681;
 
@@ -2316,25 +2139,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .home-hero {
-        padding: 40px 15px;
-    }
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    .cta-buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .stats-grid, .services-grid {
-        grid-template-columns: 1fr;
-    }
-    .carousel-image {
-        height: 80px;
-    }
-}
+
 /* Base Styles */
 body {
   font-family: 'Arial', sans-serif;
@@ -2346,14 +2151,7 @@ body {
 }
 
 /* Header */
-.top {
-  background: #003366;
-  color: #fff;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .innerleft, .innerright {
   font-size: 0.9rem;
 }
@@ -2364,12 +2162,7 @@ body {
   padding: 15px 20px;
   background: #fff;
 }
-.JapaneseAutoLogo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #003366;
-  text-decoration: none;
-}
+
 .menu-toggle {
   display: none;
   background: none;
@@ -2387,12 +2180,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.nav-list li a {
-  color: #003366;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s;
-}
+
 .nav-list li a:hover {
   color: #0055a5;
 }
@@ -2421,22 +2209,7 @@ body {
 }
 
 /* Hero Section */
-.home-hero {
-  background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('./assets/JapaneseAutoFrontPage.jpg') no-repeat center/cover;
-  color: #fff;
-  padding: 60px 20px;
-  text-align: center;
-  border-radius: 8px;
-  margin-bottom: 40px;
-}
-.hero-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
+
 .cta-buttons {
   display: flex;
   gap: 20px;
@@ -2726,11 +2499,14 @@ footer {
   height: 24px;
 }
 
+
 /* mobile phone header */
 @media (max-width: 1024px) {
   .nav-container {
       /* flex-wrap: wrap; */
       flex-direction: column;
+      gap: 10px;
+      padding: 10px;
     
   }
   .carousel-image {
@@ -2760,27 +2536,18 @@ footer {
   .nav-list ul {
       flex-direction: column;
       text-align: center;
-      gap: 15px;
-      padding: 15px 0;
+      gap: 0px;
+  }
+  .nav-list a{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
   }
   .appointment-button {
-      margin: 10px 0;
+      display: none;
   }
   
-
-  .home-hero {
-      padding: 40px 15px;
-  }
-  .hero-content h1 {
-      font-size: 2rem;
-  }
-  .hero-content p {
-      font-size: 1rem;
-  }
-  .cta-buttons {
-      flex-direction: column;
-      gap: 10px;
-  }
+  
   .brands-section h2 {
       font-size: 1.5rem;
   }
@@ -2795,12 +2562,10 @@ footer {
       font-size: 1.5rem;
   }
   .stats-grid, .services-grid {
-      grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); 
   }
   .review-card {
-      width: 100%;
-      max-width: 300px;
-      margin: 10px auto;
+      max-width: 600px;
   }
   .reviews-btn {
       padding: 8px;
@@ -2811,43 +2576,7 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
-  .home-hero {
-      padding: 30px 10px;
-  }
-  .hero-content h1 {
-      font-size: 1.8rem;
-  }
-  .hero-content p {
-      font-size: 0.9rem;
-  }
-  .cta-button {
-      padding: 10px 20px;
-      font-size: 1rem;
-  }
-  .brands-section h6 {
-      font-size: 0.9rem;
-  }
-  .brands-section h2 {
-      font-size: 1.3rem;
-  }
-  .carousel-image {
-      height: 50px;
-      margin: 0 5px;
-  }
-  .stats-section p {
-      font-size: 1rem;
-  }
-  .stats-card h3 {
-      font-size: 1.8rem;
-  }
-  .service-card img {
-      height: 120px;
-  }
-  .home-cta {
-      padding: 30px 10px;
-  }
-}
+
 .info-column a {
   color: gray; /* Set the link color to gray */
   text-decoration: none; /* Remove the underline */
@@ -2857,4 +2586,186 @@ footer {
 .info-column a:hover {
   text-decoration: none; /* Add underline when hovering */
   color: var(--main-blue); /* Change link color to blue on hover */
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+      display: none; /* Hide menu by default on mobile */
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+  }
+ 
+  .header-mobile{
+  display: flex;
+  }
+  .hero{
+      height: 30em;
+  }
+  
+  .location-info{
+  display: none;
+  }
+  
+
+  .nav-list li {
+      margin: 10px 0;
+  }
+  .social-icon-header{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    
+  }
+  .home-services{
+    display: none;
+  }
+
+
+  /* Show menu when active */
+  .nav-list.active {
+      display: block;
+  }
+
+  .hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .marin-bottom{
+    margin-bottom: 90px;
+  }
+  .address-mobile{
+    display: block;
+    background-color: var(--main-blue);
+    width: 100%;
+  }
+  .header{
+    padding: 0px;
+  }
+  .center-social{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .nav-list a {
+    color: var(--main-blue);
+  }
+  .cta-buttons{
+    display: flex;
+    justify-content: center;
+  }
+  .cta-buttons a{
+    gap: 10px;
+    font-size: 12px;
+    padding: 10px;
+  }
+  .nav-gold-reviews{
+    display: block;
+  }
+  .brands-section{
+    display: none;
+  }
+  .divide{
+    display: none;
+  }
+  .auto-stats-container{
+    display: none;
+  }
+  .auto-stats-intro{
+    display: none;
+  }
+}
+
+/* Hide the menu toggle button on larger screens */
+@media (min-width: 769px) {
+  .menu-toggle {
+      display: none;
+  }
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+      padding: 0px;
+  }
+.hero{
+  background-position-y: bottom ;
+  height: 30vh;
+}
+  .hero h1 {
+      font-size: 32px;
+  }
+  .hero p {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+      font-size: 28px;
+  }
+
+  .hero p {
+      font-size: 14px;
+  }
+
+  .appointment-button {
+      width: 100%;
+      padding: 15px 0;
+  }
+
+  .footer-container p {
+      font-size: 12px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* Stack .top section */
+  .top {
+      display: none;
+  }
+
+  /* Make .innerleft and .innerright stack */
+  .innerleft, .innerright {
+     display: none;
+  }
+
+  /* Adjust logo size on small screens */
+  .JapaneseAutoLogo {
+      font-size: 1.5em; /* Smaller logo on mobile */
+      padding: 10px;
+  }
+
+  /* Stack header content on mobile */
+  header {
+      flex-direction: column;
+  }
+
+  /* Make nav items stack vertically */
+  .nav-list {
+      display: none;  /* Hide nav list by default */
+      flex-direction: column;
+      width: 100%;
+  }
+
+  /* Show nav items when toggled */
+  .nav-list.active {
+      display: flex;
+  }
+  /* Adjust button styles */
+  .appointment-button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 12px;
+  }
+
 }

@@ -40,11 +40,12 @@
     
     <header>
         <div class="nav-container">
+            <div class="addy"></div>
             <div class="header-mobile">
+                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
                 <div class="logo-container">
                     <a href="./index.html" class="JapaneseAutoLogo">Japanese Auto Repair</a>
                 </div>
-                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
             </div>
             <nav class="nav-list" aria-label="Main Navigation">
                 <ul>
@@ -52,6 +53,19 @@
                     <li class="nav-gold"><a href="./services.html">Services</a></li>
                     <li class="nav-gold"><a href="./contact.html">Contact</a></li>
                     <li class="nav-gold"><a href="./about.html">About</a></li>
+                    <li class="nav-gold-reviews"><a href="https://www.google.com/localservices/prolist?g2lbs=AAEPWCtRPJpoFkxT9V3hNlSVlM8YaKuarkklRe8sXN-of_2nKcpErNxyYYhCkSnkAOatlRJKVaDcBWo6ph7ETQCVu-rJa1hAzQ%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&q=japanese%20auto%20repair&oq=japanese%20auto%20repair&slp=MgBSAggCYAB6rAJDaFJxWVhCaGJtVnpaU0JoZFhSdklISmxjR0ZwY2tqZWs3dkQ1WUNBZ0FoYUloQUFFQUVRQWhnQUdBRVlBaUlVYW1Gd1lXNWxjMlVnWVhWMGJ5QnlaWEJoYVhLU0FSQmhkWFJ2WDNKbGNHRnBjbDl6YUc5d21nRWpRMmhhUkZOVmFFNU5Semx1VXpCV1NsRXdSbTVVVlU1dVkyMVdlR0l3WkVKRlFVV3FBVmNRQVNvWUloUnFZWEJoYm1WelpTQmhkWFJ2SUhKbGNHRnBjaWdBTWg4UUFTSWJWRUpwOUlhbXB1d3lWMXRwWjc5ZkR2NUZLTzdCeDF1cUhtdHJNaGdRQWlJVWFtRndZVzVsYzJVZ1lYVjBieUJ5WlhCaGFYTGdBUUQ2QVFRSUFCQTCSAVQKCy9nLzF0ZDZ5bGd6Cg0vZy8xMXQxMDZrcGxfCgsvZy8xdGZzMWs0MQoNL2cvMTFueHB0a3FjMwoLL2cvMXZuOXBrczgKDS9nLzExaGI1cHZjd2s%3D&src=2&spp=CgsvZy8xdGQ2eWxnejr0AVdpSVFBQkFCRUFJWUFCZ0JHQUlpRkdwaGNHRnVaWE5sSUdGMWRHOGdjbVZ3WVdseWtnRVFZWFYwYjE5eVpYQmhhWEpmYzJodmNKb0JJME5vV2tSVFZXaE9UVWM1YmxNd1ZrcFJNRVp1VkZWT2JtTnRWbmhpTUdSQ1JVRkZxZ0ZYRUFFcUdDSVVhbUZ3WVc1bGMyVWdZWFYwYnlCeVpYQmhhWElvQURJZkVBRWlHMVJDYWZTR3BxYnNNbGRiYVdlX1h3Ny1SU2p1d2NkYnFoNXJheklZRUFJaUZHcGhjR0Z1WlhObElHRjFkRzhnY21Wd1lXbHk%3D&serdesk=1&lrlstt=1742353208208&ved=2ahUKEwjR-Zi_k5WMAxWzL0QIHX8KL60QvS56BAggEAE&scp=ChVnY2lkOmF1dG9fcmVwYWlyX3Nob3ASNhISCRlRtOQEeE2HEdEespDPwytkIghPcmVtLCBVVCoUDeew_hcVDNhjvR3icwoYJefpdb0wARoUamFwYW5lc2UgYXV0byByZXBhaXIiFGphcGFuZXNlIGF1dG8gcmVwYWlyKhBBdXRvIHJlcGFpciBzaG9w#ts=3">Reviews</a></li>
+                        <div class="center-social">
+                            <a href="https://www.facebook.com" target="_blank" class="social-icon-header">
+                            <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/_japaneseautorepair_/" target="_blank" class="social-icon-header">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.google.com/maps/place/Japanese+Auto+Repair" target="_blank" class="social-icon-header" aria-label="Visit our Google Maps page">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </a>
+
+                        </div>
                 </ul>
             </nav>
             <button class="appointment-button" onclick="location.href='./contact.html'">Get Quote</button>
@@ -72,10 +86,10 @@
 
 
    <div class="center">
-         <section class="hero" style="background-image: url('./assets/JapaneseAutoFrontPage.jpg'); border: radius 15px; ;" role="region" aria-label="Hero Section: Japanese Auto Repair">
+         <section class="hero"  role="region" aria-label="Hero Section: Japanese Auto Repair">
              <div class="hero-content">
                  <h1>Japanese Auto Repair</h1>
-                 <p>Reliable Service Specializing in Japanese Autos</p>
+                 <span class="marin-bottom"><p>Reliable Service Specializing in Japanese Autos</p></span>
                  <div class="cta-buttons">
                      <a href="./contact.html" aria-label="Book an Appointment">📅 Book Appointment</a>
                      <a href="tel:123-456-7890" aria-label="Call us at 123-456-7890">📞 Call Us</a>
@@ -83,6 +97,7 @@
              </div>
          </section>
      </div>
+     
     <!-- Main Content with Updated Styling -->
     <main class="home-page">
         <!-- Hero Section (Background Image Preserved) -->
@@ -127,9 +142,9 @@
                 <button class="carousel-btn next" onclick="scrollCarousel(1)" aria-label="Scroll right">▶</button>
             </div>
         </section>
-        <br><br>
-        <hr>
-        <br><br>
+        <br class="divide"><br class="divide">
+        <hr class="divide">
+        <br class="divide"><br class="divide">
         <!-- Stats Section -->
         <section class="auto-stats-bg" aria-labelledby="auto-stats-title" aria-describedby="auto-stats-description">
              <div class="auto-stats-intro">
@@ -154,9 +169,9 @@
                  </div>
              </div>
          </section>
-         <br><br><br>
-         <hr>
-         <br>
+         <br class="divide"><br class="divide"><br class="divide">
+         <hr class="divide">
+         <br class="divide">
         <!-- Reviews Section -->
         <section class="reviews-section">
             <h6><b>Testimonials</b></h6>
@@ -357,11 +372,19 @@
                     <p>Restore your car’s cooling system.</p>
                 </article>
             </div>
-            <br><br>
+            <br class="divide"><br class="divide">
             <a href="./services.html" class="cta-button-home">View All Services</a>
-            <br><br>
+            <br class="divide"><br class="divide">
         </section>
+        
+
+
+
+
+        
         <!-- Booking CTA -->
+
+
         <section class="home-cta">
             <h2>Book an Appointment Today</h2>
             <p>Contact us for expert service or more details.</p>
