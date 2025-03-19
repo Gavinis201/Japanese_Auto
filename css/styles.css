@@ -583,14 +583,6 @@ gap: 10px;
 }
 
 /* Ensure the html and body take up the full height */
-
-
-/* Style for the sticky top bar */
-
-
-
-
-
  .nav-list ul {
     display: flex;
     justify-content: center;
@@ -599,20 +591,6 @@ gap: 10px;
     padding: 0;
 }
 
-
-
-
-/* Sticky footer */
-
-.info-section {
-    display: flex;
-    justify-content: center; /* Center the columns horizontally */
-    gap: 20px; /* Add space between the columns */
-    padding: 20px;
-    background-color: var(--main-blue);
-    color: white;
-    line-height: 1.9;
-}
   .footer-center{
     display: flex;
     justify-content: center;
@@ -624,9 +602,7 @@ gap: 10px;
     max-width: 400px; /* Limit the width of each column */
     text-align: left; /* Keep the text left-aligned */
     align-items: center;
-    
 }
-
 
   .margin {
     margin-left: 40px;
@@ -2469,10 +2445,12 @@ body {
   padding: 40px 20px;
   background: #fff;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  line-height: 1.9;
 }
 .info-column {
   flex: 1;
   min-width: 200px;
+  margin-left: 70px;
 }
 .info-column h3 {
   font-size: 1.5rem;
@@ -2513,16 +2491,14 @@ footer {
       height: 80px;
       margin: 0 15px;
   }
-  .stats-grid {
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  }
-  .services-grid {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  }
+  
 }
 
 @media (max-width: 768px) {
-  
+  .info-column{
+
+    margin-left: 0px;
+  }
   .menu-toggle {
       display: block;
   }
@@ -2546,7 +2522,9 @@ footer {
   .appointment-button {
       display: none;
   }
-  
+  .margin{
+    margin-left: 0px;
+  }
   
   .brands-section h2 {
       font-size: 1.5rem;
@@ -2562,7 +2540,6 @@ footer {
       font-size: 1.5rem;
   }
   .stats-grid, .services-grid {
-    grid-template-columns: repeat(2, 1fr); 
   }
   .review-card {
       max-width: 600px;
@@ -2571,11 +2548,36 @@ footer {
       padding: 8px;
   }
   .info-section {
-      flex-direction: column;
-      text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .info-column-margin{
+    display: flex;
+    justify-content: center;
+  }
+  .info-column{
+    text-align: center;
+  }
+  .margin p {
+    margin-left: 0px;
+  }
+  .reviews-btn.next{
+    display: none;
+  }
+  .reviews-btn.prev{
+    display: none;
+  }
+  .story-text{
+    padding: 15px;
+  }
+  .story-text h2{
+    text-align: center;
+  }
+  .story-container{
+    gap:0px
   }
 }
-
 
 .info-column a {
   color: gray; /* Set the link color to gray */
