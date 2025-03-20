@@ -164,18 +164,7 @@ header {
   justify-content: center; /* Center the carousel content */
 }
 
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-  padding: 10px;
-  z-index: 10;
-}
+
 
 .carousel-btn.prev {
   left: -50px; /* Move it outside the container to the left */
@@ -2025,9 +2014,7 @@ body {
 .reviews-btn.next {
     right: 0;
 }
-.reviews-wrapper {
-    overflow: hidden;
-}
+
 .reviews-content {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -2539,8 +2526,7 @@ footer {
   .stats-section h2, .reviews-section h2, .home-services h2, .home-cta h2 {
       font-size: 1.5rem;
   }
-  .stats-grid, .services-grid {
-  }
+  
   .review-card {
       max-width: 600px;
   }
@@ -2576,6 +2562,9 @@ footer {
   }
   .story-container{
     gap:0px
+  }
+  .reviews-wrapper{
+    text-align: center;
   }
 }
 
@@ -2624,7 +2613,7 @@ footer {
     
   }
   .home-services{
-    display: none;
+    flex: 1
   }
 
 
@@ -2672,7 +2661,6 @@ footer {
     display: block;
   }
   .brands-section{
-    display: none;
   }
   .divide{
     display: none;
@@ -2683,6 +2671,10 @@ footer {
   .auto-stats-intro{
     display: none;
   }
+  .carousel-content{
+    gap: 0px;
+  }
+  
 }
 
 /* Hide the menu toggle button on larger screens */
@@ -2726,6 +2718,15 @@ footer {
 
   .footer-container p {
       font-size: 12px;
+  }
+
+  .carousel-btn.next{
+    height: 30px;
+    width: 30px;
+  }
+  .carousel-btn.prev{
+    height: 30px;
+    width: 30px;
   }
 }
 
