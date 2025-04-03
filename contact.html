@@ -224,15 +224,15 @@
         
     </div>
     <div class="info-column margin">
-        <h3 class="margin">Working Hours</h3>
-        <p>Monday: 8:00 am - 5:30 pm</p>
-        <p>Tuesday: 8:00 am - 5:30 pm</p>
-        <p>Wednesday: 8:00 am - 5:30 pm</p>
-        <p>Thursday: 8:00 am - 5:30 pm</p>
-        <p>Friday: 8:00 am - 5:30 pm</p>
-        <p>Saturday: 8:00 am - 12:00 pm</p>
-        <p>Sunday: Closed</p>
-    </div>
+      <h3 class="margin">Working Hours</h3>
+      <p>Monday: 8:00 am - 6:00 pm</p>
+      <p>Tuesday: 8:00 am - 6:00 pm</p>
+      <p>Wednesday: 8:00 am - 6:00 pm</p>
+      <p>Thursday: 8:00 am - 6:00 pm</p>
+      <p>Friday: 8:00 am - 6:00 pm</p>
+      <p>Saturday: 8:00 am - 2:00 pm</p>
+      <p>Sunday: Closed</p>
+  </div>
     <div class="info-column">
         <h3 class="">Japanese Auto Repair</h3>
         <p class="widthp">
@@ -258,16 +258,24 @@
     <p>Japanese Auto Repair © 2024</p>
 </footer>
 <script>
-     document.addEventListener("DOMContentLoaded", function () {
+   document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const navList = document.querySelector(".nav-list");
 
     if (menuToggle && navList) {
-        menuToggle.addEventListener("click", function () {
+        menuToggle.addEventListener("click", function (event) {
             navList.classList.toggle("active");
+            event.stopPropagation(); // Prevents click from bubbling up
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!navList.contains(event.target) && !menuToggle.contains(event.target)) {
+                navList.classList.remove("active");
+            }
         });
     }
 });
+
 </script>
 </body>
 </html>
